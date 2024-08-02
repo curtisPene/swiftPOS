@@ -1,5 +1,6 @@
 const { body } = require("express-validator");
 
+// Validate POST /api/auth/signup request
 exports.signupValidator = [
   body("firstName", "First name is required")
     .trim()
