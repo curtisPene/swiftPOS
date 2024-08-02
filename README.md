@@ -77,4 +77,4 @@ Specify the license under which the project is distributed.
 
 ## Contact
 
-For questions or further inquiries, please contact curtispene92@gmail.com.
+For questions or further inquiries, please contact [curtispene92@gmail.com](mailto:curtispene92@gmail.com).

@@ -2,29 +2,23 @@ const { body } = require("express-validator");
 
 // Validate POST /api/auth/signup request
 exports.signupValidator = [
-  body("firstName", "First name is required")
-    .trim()
-    .escape()
-    .notEmpty()
-    .withMessage("First name cannot be empty"),
-
-  body("lastName", "Last name is required")
-    .trim()
-    .escape()
-    .notEmpty()
-    .withMessage("Last name cannot be empty"),
-
+  body("firstName", "First name is required").trim().escape().notEmpty(),
+  body("lastName", "Last name is required").trim().escape().notEmpty(),
   body("email", "Valid email is required")
     .trim()
     .escape()
     .notEmpty()
     .isEmail()
-    .normalizeEmail()
-    .withMessage("Invalid email address"),
+    .normalizeEmail(),
+  body("password", "Password is required").trim().escape().notEmpty(),
+];
 
-  body("password", "Password is required")
+exports.loginValidator = [
+  body("email", "Valid email is required")
     .trim()
     .escape()
     .notEmpty()
-    .withMessage("Password cannot be empty"),
+    .isEmail()
+    .normalizeEmail(),
+  body("password", "Password is required").trim().escape().notEmpty(),
 ];

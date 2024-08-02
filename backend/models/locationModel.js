@@ -6,8 +6,8 @@ const locationSchema = new mongoose.Schema({
     required: true,
   },
   admin: {
-    type: String,
-    required: true,
+    type: mongoose.Types.ObjectId,
+    ref: "User",
   },
 });
 
