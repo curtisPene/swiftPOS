@@ -8,10 +8,12 @@ const app = express();
 app.use(bodyParser.json());
 
 mongoose
-  .connect(process.env.MONGODB_URL)
+  .connect(process.env.MONGO_URI)
   .then(() => {
     console.log("Connected to MongoDB");
-    app.listen(process.env.PORT || 8080, () => {});
+    app.listen(process.env.PORT || 8080, () => {
+      console.log(`Listening on port ${process.env.PORT || 8080}`);
+    });
   })
   .catch((error) => {
     console.log(error);
