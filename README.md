@@ -35,6 +35,7 @@ SwiftPOS is a Point of Sale (POS) application designed to streamline transaction
 3. Configure environment variables (e.g., `.env` file).
 
 4. Start the backend server:
+
    ```bash
    npm start
    ```
@@ -54,6 +55,7 @@ SwiftPOS is a Point of Sale (POS) application designed to streamline transaction
    ```
 
 3. Start the frontend development server:
+
    ```bash
    npm start
    ```
