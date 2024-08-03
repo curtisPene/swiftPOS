@@ -7,12 +7,13 @@ const User = require("../models/userModel");
 // Creates a new user
 exports.postSignup = async (req, res, next) => {
   // Check for validation errors
-  const erors = validationResult(req);
+  const errors = validationResult(req);
 
-  if (!erors.isEmpty()) {
+  if (!errors.isEmpty()) {
     const error = new Error("Validation failed");
     error.status = 400;
-    error.message = erors.array();
+    error.message = errors.array();
+    error.code = "USER_VALIDATION_FAILED";
     return next(error);
   }
 

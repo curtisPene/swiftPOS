@@ -9,6 +9,11 @@ const app = express();
 
 app.use(bodyParser.json());
 
+// Jest test route
+// app.use("/", (req, res, next) => {
+//   res.status(200).send("Hello Jest");
+// });
+
 app.use("/api/auth", authRoutes);
 
 app.use((err, req, res, next) => {
@@ -18,21 +23,10 @@ app.use((err, req, res, next) => {
   const message = err.message || "Internal Server Error";
   const code = err.code || "SERVER_INTERNAL_ERROR";
   res.status(status).json({
-    success: false,
-    error: {
-      message,
-    },
+    status,
+    message,
+    code,
   });
 });
 
-mongoose
-  .connect(process.env.MONGO_URI, { dbName: "swift_pos" })
-  .then(() => {
-    console.log("Connected to MongoDB");
-    app.listen(process.env.PORT || 8080, () => {
-      console.log(`Listening on port ${process.env.PORT || 8080}`);
-    });
-  })
-  .catch((error) => {
-    console.log(error);
-  });
+module.exports = app;
