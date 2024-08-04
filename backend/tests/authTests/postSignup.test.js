@@ -25,7 +25,6 @@ describe("POST /api/auth/signup", () => {
   it("Should return 400 status code if validation fails", async () => {
     const response = await request(app).post("/api/auth/signup").send({});
 
-    // expect(response.status).toBe(400);
     expect(response.body).toHaveProperty("status", 400);
     expect(response.body).toHaveProperty("message");
     expect(response.body).toHaveProperty("code", "USER_VALIDATION_FAILED");

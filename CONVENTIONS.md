@@ -124,12 +124,13 @@ Successful responses should follow this structure:
 ```json
 {
   "status": 200,
+  "message": "User fetched successfully",
+  "code": "USER_FOUND",
   "data": {
     "id": 1,
     "name": "John Doe",
     "email": "john.doe@example.com"
-  },
-  "message": "User fetched successfully"
+  }
 }
 ```
 
