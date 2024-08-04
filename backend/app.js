@@ -5,7 +5,7 @@ const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
 
 const authRoutes = require("./routes/authRoutes");
-const isAuth = require("./middleware/is-auth");
+const isAuth = require("./middleware/isAuth");
 
 const app = express();
 
@@ -17,7 +17,6 @@ app.use(bodyParser.json());
 //   res.status(200).send("Hello Jest");
 // });
 
-app.use("/api", isAuth);
 app.use("/api/auth", authRoutes);
 
 app.use((err, req, res, next) => {

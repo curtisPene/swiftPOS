@@ -12,9 +12,9 @@ const isAuth = async (req, res, next) => {
   }
 
   // Decode and verify access token
-  const token = jwt.verify(accessToken, process.env.JWT_SECRET);
-
-  if (!accessToken || !accessToken) {
+  try {
+    const token = jwt.verify(accessToken, prcess.env.JWT_SECRE);
+  } catch (e) {
     const error = new Error("Authentication failed");
     error.status = 400;
     error.code = "USER_NOT_AUTHENTICATED";

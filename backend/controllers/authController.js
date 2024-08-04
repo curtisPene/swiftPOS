@@ -45,7 +45,7 @@ exports.postSignup = async (req, res, next) => {
   try {
     await session.withTransaction(async (session) => {
       await user.save({ session });
-      await locatin.save({ session });
+      await location.save({ session });
     });
   } catch (e) {
     const error = new Error("Failed to save user");
