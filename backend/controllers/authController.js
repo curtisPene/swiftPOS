@@ -34,8 +34,8 @@ exports.postSignup = async (req, res, next) => {
 
   // return response
   res.status(201).json({
-    status: "success",
     message: "User created",
+    code: "USER_CREATED",
   });
 };
 
