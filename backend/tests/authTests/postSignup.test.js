@@ -1,8 +1,8 @@
 const request = require("supertest");
 const mongoose = require("mongoose");
 const bcrypt = require("bcrypt");
-const app = require("../app");
-const User = require("../models/userModel");
+const app = require("../../app");
+const User = require("../../models/userModel");
 
 describe("POST /api/auth/signup", () => {
   beforeAll(async () => {

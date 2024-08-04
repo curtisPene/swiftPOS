@@ -46,8 +46,8 @@ exports.postLogin = async (req, res, next) => {
   if (!errors.isEmpty()) {
     const error = new Error("Validation failed");
     error.status = 400;
-    error.details = errors.array();
-    error.code = "VALIDATION_FAILED";
+    error.message = errors.array();
+    error.code = "USER_VALIDATION_FAILED";
     return next(error);
   }
 
@@ -60,6 +60,7 @@ exports.postLogin = async (req, res, next) => {
     const error = new Error("Invalid email or password");
     error.status = 400;
     error.code = "USER_INVALID_CREDENTIALS";
+    return next(error);
   }
   // Verify password
   const hashedPassword = user.password;
@@ -89,11 +90,8 @@ exports.postLogin = async (req, res, next) => {
   });
 
   // Send response with JWT
-  res.status(201).json({
-    status: 200,
-    data: {
-      token,
-    },
+  res.status(202).json({
+    code: "USER_AUTHENTICATED",
     message: "User logged in",
   });
 };
