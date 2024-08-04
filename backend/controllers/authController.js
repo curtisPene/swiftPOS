@@ -92,20 +92,43 @@ exports.postLogin = async (req, res, next) => {
     return next(error);
   }
 
-  // Create JWT and create cookie
-  const token = await jwt.sign(
+  // Create JWT'S - Access and refresh token
+  const accessToken = await jwt.sign(
     {
       sub: user._id,
       role: user.role,
-      iss: process.env.domain,
+      iss: process.env.DEV_DOMAIN,
+      exp: Math.floor(Date.now() / 1000) + 15 * 60, // 15 minutes expiry
     },
     process.env.JWT_SECRET
   );
 
-  res.cookie("Authorization", token, {
+  const refreshToken = await jwt.sign(
+    {
+      sub: user._id,
+      role: user.role,
+      iss: process.env.DEV_DOMAIN,
+      exp: Math.floor(Date.now() / 1000) + 30 * 24 * 60 * 60, // 30 days expiry
+    },
+    process.env.JWT_SECRET_REFRESH
+  );
+
+  res.cookie("swf_refresh", refreshToken, {
+    sub: user._id,
+    role: user.role,
     httpOnly: true,
-    sameSite: true,
-    domain: process.env.domain,
+    iss: process.env.DEV_DOMAIN,
+    secure: process.env.NODE_ENV === "production",
+    sameSite: "Strict",
+    jti: crypto.randomUUID(),
+    maxAge: 30 * 24 * 60 * 60 * 1000, // 30 days
+  });
+
+  res.cookie("swf_access", accessToken, {
+    httpOnly: true,
+    secure: process.env.NODE_ENV === "production",
+    sameSite: "Strict",
+    maxAge: 15 * 60 * 1000, // 15 minutes
   });
 
   // Send response with JWT

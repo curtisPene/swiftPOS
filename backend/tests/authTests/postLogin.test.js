@@ -4,6 +4,7 @@ const bcrypt = require("bcrypt");
 const app = require("../../app");
 const User = require("../../models/userModel");
 const jwt = require("jsonwebtoken");
+const chalk = require("chalk");
 
 describe("POST /api/auth/login", () => {
   beforeAll(async () => {
@@ -29,11 +30,19 @@ describe("POST /api/auth/login", () => {
     expect(response.headers["set-cookie"]).toBeDefined();
     expect(response.body.message).toBe("User logged in");
 
-    const cookies = response.headers["set-cookie"][0].split(";");
+    const cookies = response.headers["set-cookie"];
     expect(cookies).toBeDefined();
-    expect(cookies[0].split("=")[0]).toBe("Authorization");
+    expect(cookies[0].split("=")[0]).toBe("swf_refresh");
+    expect(cookies[1].split("=")[0]).toBe("swf_access");
+    console.log(chalk.yellow(cookies[0].split("=")[1]));
     expect(
-      jwt.verify(cookies[0].split("=")[1], process.env.JWT_SECRET)
+      jwt.verify(
+        cookies[0].split("=")[1].split(";")[0],
+        process.env.JWT_SECRET_REFRESH
+      )
+    ).toBeTruthy();
+    expect(
+      jwt.verify(cookies[1].split("=")[1].split(";")[0], process.env.JWT_SECRET)
     ).toBeTruthy();
     expect(response.body).toHaveProperty("code", "USER_AUTHENTICATED");
   });
