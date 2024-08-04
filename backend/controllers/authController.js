@@ -29,13 +29,14 @@ exports.postSignup = async (req, res, next) => {
     firstName,
     lastName,
   });
+
   // Save user to database
   await user.save();
 
   // return response
   res.status(201).json({
-    status: "success",
     message: "User created",
+    code: "USER_CREATED",
   });
 };
 

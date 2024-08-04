@@ -19,7 +19,8 @@ describe("POST /api/auth/signup", () => {
     });
 
     expect(response.status).toBe(201);
-    expect(response.body).toHaveProperty("status", "success");
+    expect(response.body).toHaveProperty("message", "User created");
+    expect(response.body).toHaveProperty("code", "USER_CREATED");
   });
 
   it("Should return 400 status code if validation fails", async () => {
