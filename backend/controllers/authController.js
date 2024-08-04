@@ -31,6 +31,7 @@ exports.postSignup = async (req, res, next) => {
     password: hashedPasword,
     firstName,
     lastName,
+    role: "admin",
   });
 
   // Create new location and add user as admin
