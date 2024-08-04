@@ -25,4 +25,13 @@ const userSchema = new mongoose.Schema({
   },
 });
 
+// Ensures that location admins cannot be removed
+userSchema.pre("findOneAndDelete", async (next) => {
+  const user = this;
+  if (this.admin) {
+    console.log("User is an admin, cannot delete");
+  }
+  return next(error);
+});
+
 module.exports = mongoose.model("User", userSchema);

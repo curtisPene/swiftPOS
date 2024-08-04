@@ -3,6 +3,7 @@ const { validationResult, matchedData } = require("express-validator");
 const jwt = require("jsonwebtoken");
 
 const User = require("../models/userModel");
+const Location = require("../models/locationModel");
 
 const mongoose = require("mongoose");
 
@@ -32,12 +33,19 @@ exports.postSignup = async (req, res, next) => {
     lastName,
   });
 
-  // Create session with transaction and save user
+  // Create new location and add user as admin
+  const locatin = new Location({
+    name: "Main Location",
+    admin: user._id,
+  });
+
+  // Create session with transaction and attemp writes to database
   const session = await mongoose.startSession();
 
   try {
     await session.withTransaction(async (session) => {
       await user.save({ session });
+      await locatin.save({ session });
     });
   } catch (e) {
     const error = new Error("Failed to save user");
