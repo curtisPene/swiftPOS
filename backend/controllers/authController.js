@@ -4,6 +4,8 @@ const jwt = require("jsonwebtoken");
 
 const User = require("../models/userModel");
 
+const mongoose = require("mongoose");
+
 // Creates a new user
 exports.postSignup = async (req, res, next) => {
   // Check for validation errors
@@ -30,8 +32,16 @@ exports.postSignup = async (req, res, next) => {
     lastName,
   });
 
-  // Save user to database
-  await user.save();
+  // Create session with transaction and save user
+  const session = await mongoose.startSession();
+
+  try {
+    await session.withTransaction(async (session) => {
+      await user.save({ session });
+    });
+  } catch (e) {
+    const error = new Error("Failed to save user");
+  }
 
   // return response
   res.status(201).json({
