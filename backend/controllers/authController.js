@@ -35,7 +35,7 @@ exports.postSignup = async (req, res, next) => {
   });
 
   // Create new location and add user as admin
-  const locatin = new Location({
+  const location = new Location({
     name: "Main Location",
     admin: user._id,
   });
@@ -50,6 +50,7 @@ exports.postSignup = async (req, res, next) => {
     });
   } catch (e) {
     const error = new Error("Failed to save user");
+    return next(error);
   }
 
   // return response

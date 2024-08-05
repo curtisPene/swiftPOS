@@ -12,7 +12,6 @@ const app = express();
 app.use(cookieParser());
 app.use(bodyParser.json());
 
-app.use("/", isAuth);
 app.use("/api/auth", authRoutes);
 
 app.use((err, req, res, next) => {
