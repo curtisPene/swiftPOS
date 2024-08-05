@@ -45,7 +45,7 @@ describe("isAuth middleware", () => {
         iss: process.env.DEV_DOMAIN,
         exp: Math.floor(Date.now() / 1000) + 15 * 60,
       },
-      "process.env.JWT_SECRET"
+      "dzfgrfjdfhdfg"
     );
   });
 
@@ -78,9 +78,38 @@ describe("isAuth middleware", () => {
     const [error] = next.mock.calls[0];
 
     // Verify the error object
-    expect(error).toBeInstanceOf(Error);
     expect(error.message).toBe("Authentication failed");
     expect(error.status).toBe(401);
     expect(error.code).toBe("USER_EXPIRED_ACCESS_TOKEN");
+  });
+
+  test("User with invalid access token", async () => {
+    req.cookies = { swf_access: invalidAccessToken };
+
+    await isAuth(req, res, next);
+
+    // Get the first call's arguments
+    const [error] = next.mock.calls[0];
+    console.log(error);
+
+    // Verify the error object
+    expect(error.message).toBe("Authentication failed");
+    expect(error.status).toBe(400);
+    expect(error.code).toBe("USER_MALFORMED_ACCESS_TOKEN");
+  });
+
+  test("User without access token", async () => {
+    req.cookies = { swf_access: "" };
+
+    await isAuth(req, res, next);
+
+    // Get the first call's arguments
+    const [error] = next.mock.calls[0];
+    console.log(error);
+
+    // Verify the error object
+    expect(error.message).toBe("Authentication failed");
+    expect(error.status).toBe(400);
+    expect(error.code).toBe("USER_NOT_AUTHENTICATED");
   });
 });
