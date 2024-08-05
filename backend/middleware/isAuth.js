@@ -13,7 +13,7 @@ const isAuth = async (req, res, next) => {
 
   // Decode and verify access token
   try {
-    const token = jwt.verify(accessToken, prcess.env.JWT_SECRE);
+    const token = jwt.verify(accessToken, prcess.env.JWT_SECRET);
   } catch (e) {
     const error = new Error("Authentication failed");
     error.status = 400;
@@ -27,12 +27,11 @@ const isAuth = async (req, res, next) => {
   const tokenExpired = tokenPayload.payload.exp < currentTime;
 
   if (tokenExpired) {
-    const error = new Error("Token expired");
+    const error = new Error("Access token expired");
     error.status = 401;
-    error.code = "USER_TOKEN_EXPIRED";
+    error.code = "USER_ACCESS_TOKEN_EXPIRED";
     return next(error);
   }
-  console.log("User authenticated");
   next();
 };
 

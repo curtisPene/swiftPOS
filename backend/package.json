@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "@types/jest": "^29.5.12",
+    "@types/request": "^2.48.12",
     "bcrypt": "^5.1.1",
     "body-parser": "^1.20.2",
     "chalk": "^4.1.2",
