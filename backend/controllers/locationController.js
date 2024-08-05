@@ -8,6 +8,7 @@ exports.getProducts = async (req, res, next) => {
     const locationProducts = await Location.findById(locationId).populate(
       "products"
     );
+    // Send response if location has no products to fetch
     if (!locationProducts) {
       return res.status(200).json({
         message: "No products found at location",
@@ -17,7 +18,7 @@ exports.getProducts = async (req, res, next) => {
         },
       });
     }
-
+    // Return location products
     return res.status(200).json({
       message: "Location products fetched successfully",
       code: "LOCATION_PRODUCTS_FOUND",
@@ -29,5 +30,4 @@ exports.getProducts = async (req, res, next) => {
     error.code = "LOCATION_ERROR_LOADING_REQUESTED_DATA";
     return next(error);
   }
-  // Return location products
 };
