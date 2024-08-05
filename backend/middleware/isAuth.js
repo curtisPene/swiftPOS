@@ -13,23 +13,16 @@ const isAuth = async (req, res, next) => {
 
   // Decode and verify access token
   try {
-    const token = jwt.verify(accessToken, prcess.env.JWT_SECRET);
+    const token = jwt.verify(accessToken, process.env.JWT_SECRET);
   } catch (e) {
     const error = new Error("Authentication failed");
+    if (e.name === "TokenExpiredError") {
+      error.status = 401;
+      error.code = "USER_EXPIRED_ACCESS_TOKEN";
+      return next(error);
+    }
     error.status = 400;
-    error.code = "USER_NOT_AUTHENTICATED";
-    return next(error);
-  }
-
-  // If token expired but valid throw error with 401 - Signal client to request new access token
-  const tokenPayload = jwt.decode(accessToken, { complete: true });
-  const currentTime = Math.floor(Date.now() / 1000);
-  const tokenExpired = tokenPayload.payload.exp < currentTime;
-
-  if (tokenExpired) {
-    const error = new Error("Access token expired");
-    error.status = 401;
-    error.code = "USER_ACCESS_TOKEN_EXPIRED";
+    error.code = "USER_DEFORMED_ACCESS_TOKEN";
     return next(error);
   }
   next();
