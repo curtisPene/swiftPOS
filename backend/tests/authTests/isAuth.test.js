@@ -9,7 +9,7 @@ const httpMocks = require("node-mocks-http");
 describe("isAuth middleware", () => {
   let accessToken, expiredAccessToken, invalidAccessToken;
   beforeAll(async () => {
-    await mongoose.connect(process.env.MONGO_TEST_URI_LOCAL);
+    await mongoose.connect(process.env.MONGO_TEST_URI);
     const user = await User.create({
       email: "user@gmail.com",
       password: "password",

@@ -8,7 +8,7 @@ const chalk = require("chalk");
 
 describe("POST /api/auth/login", () => {
   beforeAll(async () => {
-    await mongoose.connect(process.env.MONGO_TEST_URI_LOCAL);
+    await mongoose.connect(process.env.MONGO_TEST_URI);
     const hashedPasword = await bcrypt.hash("password", 10);
     await User.create({
       email: "user@gmail.com",
@@ -34,7 +34,7 @@ describe("POST /api/auth/login", () => {
     expect(cookies).toBeDefined();
     expect(cookies[0].split("=")[0]).toBe("swf_refresh");
     expect(cookies[1].split("=")[0]).toBe("swf_access");
-    console.log(chalk.yellow(cookies[0].split("=")[1]));
+
     expect(
       jwt.verify(
         cookies[0].split("=")[1].split(";")[0],

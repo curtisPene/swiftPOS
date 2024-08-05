@@ -49,6 +49,7 @@ exports.postSignup = async (req, res, next) => {
       await location.save({ session });
     });
   } catch (e) {
+    console.log(e);
     const error = new Error("Failed to save user");
     return next(error);
   }

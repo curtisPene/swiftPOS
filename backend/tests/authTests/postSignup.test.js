@@ -6,7 +6,7 @@ const User = require("../../models/userModel");
 
 describe("POST /api/auth/signup", () => {
   beforeAll(async () => {
-    await mongoose.connect(process.env.MONGO_TEST_URI_LOCAL);
+    await mongoose.connect(process.env.MONGO_TEST_URI);
   });
 
   it("should create a new user and return a 201 status code", async () => {
