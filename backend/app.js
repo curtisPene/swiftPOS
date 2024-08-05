@@ -14,6 +14,8 @@ app.use(cookieParser());
 app.use(bodyParser.json());
 
 app.use("/api/auth", authRoutes);
+
+// Routes below require authentication
 app.use("/api/location", isAuth, locationRoutes);
 
 app.use((err, req, res, next) => {
