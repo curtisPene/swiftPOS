@@ -61,5 +61,6 @@ describe("POST /api/admin/addProduct", () => {
 
   afterAll(async () => {
     mongoose.connection.close();
+    mongoose.connection.dropDatabase();
   });
 }, 10000);
