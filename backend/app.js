@@ -7,6 +7,7 @@ const cookieParser = require("cookie-parser");
 const authRoutes = require("./routes/authRoutes");
 const isAuth = require("./middleware/isAuth");
 const locationRoutes = require("./routes/locationRoutes");
+const adminRoutes = require("./routes/adminRoutes");
 
 const app = express();
 
@@ -16,6 +17,7 @@ app.use(bodyParser.json());
 app.use("/api/auth", authRoutes);
 
 // Routes below require authentication
+app.use("/api/admin", adminRoutes);
 app.use("/api/location", isAuth, locationRoutes);
 
 app.use((err, req, res, next) => {

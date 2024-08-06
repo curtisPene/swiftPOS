@@ -32,6 +32,12 @@ const isAuth = async (req, res, next) => {
     return next(e);
   }
 
+  // Decode access token payload
+  const payload = jwt.decode(accessToken);
+
+  req.user = payload.sub;
+  req.location = payload.location;
+
   next();
 };
 

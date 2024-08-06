@@ -25,19 +25,22 @@ exports.postSignup = async (req, res, next) => {
 
   // Hash password
   const hashedPasword = await bcrypt.hash(password, 10);
-  // Create new user
-  const user = new User({
-    email,
-    password: hashedPasword,
-    firstName,
-    lastName,
-    role: "admin",
-  });
 
   // Create new location and add user as admin
   const location = new Location({
     name: "Main Location",
-    admin: user._id,
+    admin: new mongoose.Types.ObjectId(),
+    products: [],
+  });
+
+  // Create new user and add location to user
+  const user = new User({
+    email,
+    password: hashedPasword,
+    location: new mongoose.Types.ObjectId(),
+    firstName,
+    lastName,
+    role: "admin",
   });
 
   // Create session with transaction and attemp writes to database
@@ -45,13 +48,22 @@ exports.postSignup = async (req, res, next) => {
 
   try {
     await session.withTransaction(async (session) => {
+      // Save location and user
+      await user.save({ session });
+      await location.save({ session });
+
+      // Add refs to each other
+      user.location = location._id;
+      location.admin = user._id;
       await user.save({ session });
       await location.save({ session });
     });
   } catch (e) {
-    console.log(e);
+    console.log(e.message);
     const error = new Error("Failed to save user");
     return next(error);
+  } finally {
+    session.endSession();
   }
 
   // return response
@@ -95,11 +107,15 @@ exports.postLogin = async (req, res, next) => {
     return next(error);
   }
 
+  // Get user's role and location
+  const role = user.role;
+
   // Create JWT'S - Access and refresh token
   const accessToken = jwt.sign(
     {
       sub: user._id,
       role: user.role,
+      location: user.location,
       iss: process.env.DEV_DOMAIN,
       exp: Math.floor(Date.now() / 1000) + 15 * 60, // 15 minutes expiry
     },
@@ -110,6 +126,7 @@ exports.postLogin = async (req, res, next) => {
     {
       sub: user._id,
       role: user.role,
+      location: user.location,
       iss: process.env.DEV_DOMAIN,
       exp: Math.floor(Date.now() / 1000) + 30 * 24 * 60 * 60, // 30 days expiry
     },

@@ -17,6 +17,12 @@ const locationSchema = new mongoose.Schema(
         ref: "Product",
       },
     ],
+    users: [
+      {
+        type: mongoose.Types.ObjectId,
+        ref: "User",
+      },
+    ],
   },
   {
     timestamps: true,
