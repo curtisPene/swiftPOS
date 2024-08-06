@@ -17,7 +17,7 @@ app.use(bodyParser.json());
 app.use("/api/auth", authRoutes);
 
 // Routes below require authentication
-app.use("/api/admin", adminRoutes);
+app.use("/api/admin", isAuth, adminRoutes);
 app.use("/api/location", isAuth, locationRoutes);
 
 app.use((err, req, res, next) => {

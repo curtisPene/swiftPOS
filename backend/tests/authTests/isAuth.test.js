@@ -90,7 +90,6 @@ describe("isAuth middleware", () => {
 
     // Get the first call's arguments
     const [error] = next.mock.calls[0];
-    console.log(error);
 
     // Verify the error object
     expect(error.message).toBe("Authentication failed");
@@ -105,7 +104,6 @@ describe("isAuth middleware", () => {
 
     // Get the first call's arguments
     const [error] = next.mock.calls[0];
-    console.log(error);
 
     // Verify the error object
     expect(error.message).toBe("Authentication failed");
