@@ -51,3 +51,9 @@ exports.addProductValidator = [
     return true;
   }),
 ];
+
+exports.updateProductValidator = [
+  body("brand").notEmpty().trim().escape(),
+  body("description").notEmpty().trim().escape(),
+  body("category").notEmpty().trim().escape(),
+];

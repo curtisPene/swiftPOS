@@ -37,6 +37,7 @@ const isAuth = async (req, res, next) => {
 
   req.user = payload.sub;
   req.location = payload.location;
+  req.role = payload.role;
 
   next();
 };

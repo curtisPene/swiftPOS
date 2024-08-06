@@ -76,3 +76,45 @@ exports.addProduct = async (req, res, next) => {
     session.endSession();
   }
 };
+
+exports.updateProduct = async (req, res, next) => {
+  // Get validation errors
+  const errors = validationResult(req);
+
+  if (!errors.isEmpty) {
+    const error = new Error("Validation failed");
+    error.message = errors.array();
+    error.code = "VALIDATION_ERROR";
+    return next(error);
+  }
+  // Get validated data from matchedData function
+  const { brand, description, category } = matchedData(req);
+  // Find product in database - id in request params
+  const productId = req.params.productId;
+  const product = await Product.findById(productId);
+
+  if (!product) {
+    const error = new Error("Incorrect product id");
+    error.code = "PRODUCT_NOT_FOUND";
+    return next(error);
+  }
+  // Ensure user is admin at product location
+  const allowUpdate =
+    req.role === "admin" && product.location.toString() === req.location;
+  if (!allowUpdate) {
+    const error = new Error("Not authorized to update this product");
+    error.code = "PRODUCT_NOT_AUTHORIZED";
+    return next(error);
+  }
+  // Update and save product
+  product.brand = brand;
+  product.description = description;
+  product.category = category;
+  await product.save();
+  // Return response
+  res.status(200).json({
+    message: "Product updated",
+    code: "PRODUCT_UPDATED",
+    data: product,
+  });
+};

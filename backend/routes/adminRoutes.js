@@ -1,13 +1,20 @@
 const express = require("express");
 const adminController = require("../controllers/adminController");
 const validator = require("../middleware/validatorMiddleware");
+const asyncErrorMiddleware = require("../middleware/asyncErrorMiddleware");
 
 const router = express.Router();
 
 router.post(
   "/product",
   validator.addProductValidator,
-  adminController.addProduct
+  asyncErrorMiddleware(adminController.addProduct)
+);
+
+router.patch(
+  "/product/:productId",
+  validator.updateProductValidator,
+  asyncErrorMiddleware(adminController.updateProduct)
 );
 
 module.exports = router;
