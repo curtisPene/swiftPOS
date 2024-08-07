@@ -5,6 +5,26 @@ const Location = require("./models/Location");
 const Product = require("./models/Product");
 const ProductVariant = require("./models/ProductVariant");
 
+const productCategories = [
+  "Fruits & Vegetables",
+  "Dairy & Eggs",
+  "Meat & Seafood",
+  "Bakery",
+  "Canned & Packaged Goods",
+  "Frozen Foods",
+  "Beverages (Non-Alcoholic)",
+  "Snacks",
+  "Household Supplies",
+  "Personal Care",
+  "Health & Wellness",
+  "Baby Products",
+  "Pet Supplies",
+  "International Foods",
+  "Organic & Natural Foods",
+  "Beverages (Alcoholic)",
+  "Tobacco",
+];
+
 // Connect to the MongoDB database
 const connectDB = async () => {
   await mongoose.connect(process.env.MONGO_TEST_URI, {
@@ -26,11 +46,12 @@ exports.generateAccessToken = (userId, locationId, role) => {
 
 // Seed the database with test data
 const seedDatabase = async () => {
+  // To-do: refactor this block into seperate functions
   try {
     await connectDB();
     // Create two test users with role admin
-    const user1 = await User.create({
-      email: "user1@gmail.com",
+    const admin1 = await User.create({
+      email: "admin1@gmail.com",
       password: "password1",
       location: new mongoose.Types.ObjectId(),
       firstName: "John",
@@ -39,7 +60,7 @@ const seedDatabase = async () => {
     });
 
     const user2 = await User.create({
-      email: "user2@gmail.com",
+      email: "admin2@gmail.com",
       password: "password2",
       location: new mongoose.Types.ObjectId(),
       firstName: "Jane",
@@ -79,24 +100,18 @@ const seedDatabase = async () => {
       products: [],
     });
 
-    // Add the admin users to locations
-    user1.location = location1._id;
-    user2.location = location1._id;
-    user3.location = location2._id;
+    // Add the locations to the users and admins
+    admin1.location = location1._id;
+    admin2.location = location2._id;
+    user3.location = location1._id;
     user4.location = location2._id;
 
+    await admin1.save();
+    await admin2.save();
     await user1.save();
     await user2.save();
-    await user3.save();
-    await user4.save();
 
-    // Add the admin users to locations
-    location1.admin = user1._id;
-    location2.admin = user3._id;
-    await location1.save();
-    await location2.save();
-
-    // Add the other users to locations in the users array
+    // Add the users to the locations users array
     location1.users.push(user3._id);
     location2.users.push(user4._id);
 
@@ -105,18 +120,18 @@ const seedDatabase = async () => {
 
     // Create two test products and save
     const product1 = await Product.create({
-      location: new mongoose.Types.ObjectId(),
+      location: location1._id,
       brand: "Brand 1",
       description: "Description 1",
-      category: "Category 1",
+      category: Math.floor(Math.random() * productCategories.length + 1),
       variants: [],
     });
 
     const product2 = await Product.create({
-      location: new mongoose.Types.ObjectId(),
+      location: location2._id,
       brand: "Brand 2",
       description: "Description 2",
-      category: "Category 2",
+      category: Math.floor(Math.random() * productCategories.length + 1),
       variants: [],
     });
 
@@ -140,6 +155,26 @@ const seedDatabase = async () => {
 
     await variant1.save();
     await variant2.save();
+
+    // Add the variants to the products
+    product1.variants.push(variant1._id);
+    product2.variants.push(variant2._id);
+
+    await product1.save();
+    await product2.save();
+
+    return {
+      user1,
+      user2,
+      user3,
+      user4,
+      location1,
+      location2,
+      product1,
+      product2,
+      variant1,
+      variant2,
+    };
   } catch (error) {
     console.error("Error seeding database:", error);
     throw error;
