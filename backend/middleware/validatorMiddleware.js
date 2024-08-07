@@ -57,3 +57,5 @@ exports.updateProductValidator = [
   body("description").notEmpty().trim().escape(),
   body("category").notEmpty().trim().escape(),
 ];
+
+exports.addVariantValidator = [];

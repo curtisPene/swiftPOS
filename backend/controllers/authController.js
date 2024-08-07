@@ -133,10 +133,20 @@ exports.postLogin = async (req, res, next) => {
     process.env.JWT_SECRET_REFRESH
   );
 
-  res.cookie("swf_refresh", refreshToken);
+  // Set cookies in the response
+  res.cookie("accessToken", accessToken, {
+    httpOnly: true,
+    secure: process.env.NODE_ENV === "production", // Ensure secure in production
+    sameSite: "Strict",
+    maxAge: 15 * 60 * 1000, // 15 minutes
+  });
 
-  res.cookie("swf_access", accessToken);
-
+  res.cookie("refreshToken", refreshToken, {
+    httpOnly: true,
+    secure: process.env.NODE_ENV === "production", // Ensure secure in production
+    sameSite: "Strict",
+    maxAge: 30 * 24 * 60 * 60 * 1000, // 30 days
+  });
   // Send response with JWT
   res.status(202).json({
     code: "USER_AUTHENTICATED",

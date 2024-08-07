@@ -191,3 +191,12 @@ exports.deleteVariant = async (req, res, next) => {
     code: "VARIANT_DELETED",
   });
 };
+
+exports.addVariant = async (req, res, next) => {
+  // Check for validation errors
+  // Get matched data
+  // Get product from database
+  // Ensure user is admin and product location matches admin location
+  // Add variant to product
+  // Save and return response
+};
