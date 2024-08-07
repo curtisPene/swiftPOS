@@ -17,4 +17,6 @@ router.patch(
   asyncErrorMiddleware(adminController.updateProduct)
 );
 
+router.delete("/product/:variantId", adminController.deleteProduct);
+
 module.exports = router;

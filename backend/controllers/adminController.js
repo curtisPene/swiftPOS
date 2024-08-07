@@ -121,3 +121,73 @@ exports.updateProduct = async (req, res, next) => {
     data: product,
   });
 };
+
+exports.deleteVariant = async (req, res, next) => {
+  // Get variant id from request params
+  const { variantId } = req.params;
+
+  // Fetch variant from database
+  const variant = ProductVariant.findById(variantId);
+
+  if (!variant) {
+    const error = new Error("Incorrect variant id");
+    error.code = "VARIANT_NOT_FOUND";
+    error.status(404);
+    return next(error);
+  }
+
+  // Fetch product from database
+  const product = Product.findById(variant.product).populate("variants");
+
+  if (!product) {
+    const error = new Error("Referenced product not found");
+    error.code = "PRODUCT_NOT_FOUND";
+    error.status(404);
+    return next(error);
+  }
+  // Compare user location to variant location
+  const userLocation = req.location;
+  isAuthorized =
+    variant.location.toString() === userLocation && req.role === "admin";
+
+  if (!isAuthorized) {
+    const error = new Error("Not authorized to delete this variant");
+    error.code = "USER_NOT_AUTHORIZED";
+    error.status = 401;
+    return next(error);
+  }
+
+  const deleteProduct = product.products.length === 1;
+
+  // Start mongoose session
+  const session = await mongoose.startSession();
+
+  try {
+    session.withTransaction(async (session) => {
+      // If variant is not the only variant, remove from product variants array
+      if (!deleteProduct) {
+        product.variants = product.variants.filter((variant) => {
+          return variant._id.toString() !== variantId;
+        });
+        await product.save({ session });
+      } else {
+        // Else - Delete variant and product
+        await Product.findByIdAndDelete(product._id, { session });
+        await ProductVariant.findByIdAndDelete(variant._id, { session });
+      }
+    });
+  } catch (e) {
+    console.log(e.message);
+    const error = new Error("Failed to delete");
+    const code = "VARIANT_DELETE_FAILED";
+    error.status = 400;
+    return next(error);
+  } finally {
+    session.endSession();
+  }
+
+  res.status(200).json({
+    message: "Delete operation successful",
+    code: "VARIANT_DELETED",
+  });
+};
