@@ -34,14 +34,32 @@ const connectDB = async () => {
 };
 
 // Function to generate an access token
-exports.generateAccessToken = (userId, locationId, role) => {
+exports.generateAccessToken = (
+  userId,
+  locationId,
+  role,
+  validSign,
+  expired
+) => {
   const payload = {
     sub: userId,
     location: locationId,
     role: role,
   };
 
-  return jwt.sign(payload, process.env.JWT_SECRET, { expiresIn: "15m" });
+  let exp;
+
+  if (expired) {
+    exp = Math.floor(Date.now() / 1000) - 15 * 60;
+  } else {
+    exp = Math.floor(Date.now() / 1000) + 60 * 60;
+  }
+
+  return jwt.sign(
+    payload,
+    validSign ? process.env.JWT_SECRET : "This isnt the secret",
+    { expiresIn: exp }
+  );
 };
 
 // Seed the database with test data
