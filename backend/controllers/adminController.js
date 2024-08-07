@@ -81,10 +81,11 @@ exports.updateProduct = async (req, res, next) => {
   // Get validation errors
   const errors = validationResult(req);
 
-  if (!errors.isEmpty) {
+  if (!errors.isEmpty()) {
     const error = new Error("Validation failed");
     error.message = errors.array();
     error.code = "VALIDATION_ERROR";
+    error.status = 400;
     return next(error);
   }
   // Get validated data from matchedData function
@@ -99,11 +100,13 @@ exports.updateProduct = async (req, res, next) => {
     return next(error);
   }
   // Ensure user is admin at product location
+  console.log(req.role);
   const allowUpdate =
     req.role === "admin" && product.location.toString() === req.location;
   if (!allowUpdate) {
     const error = new Error("Not authorized to update this product");
-    error.code = "PRODUCT_NOT_AUTHORIZED";
+    error.code = "USER_NOT_AUTHORIZED";
+    error.status = 401;
     return next(error);
   }
   // Update and save product
