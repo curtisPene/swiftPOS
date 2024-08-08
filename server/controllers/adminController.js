@@ -259,3 +259,5 @@ exports.addVariant = async (req, res, next) => {
     await session.endSession();
   }
 };
+
+exports.updateVariant = async (req, res, next) => {};
