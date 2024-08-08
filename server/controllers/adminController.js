@@ -260,4 +260,58 @@ exports.addVariant = async (req, res, next) => {
   }
 };
 
-exports.updateVariant = async (req, res, next) => {};
+// Update variant
+exports.updateVariant = async (req, res, next) => {
+  // Check for validation errors
+  const errors = validationResult(req);
+
+  if (!errors.isEmpty()) {
+    const error = new Error("Validation failed");
+    error.status = 400;
+    error.message = errors.array();
+    error.code = "VALIDATION_ERROR";
+    return next(error);
+  }
+  // Get matched data
+  const { variantName, location, product, price, attributes, stock } =
+    matchedData(req);
+  // Get product variant from database
+  const variant = await ProductVariant.findById(product);
+
+  if (!variant) {
+    const error = new Error("Incorrect variant id");
+    error.code = "VARIANT_NOT_FOUND";
+    error.status(404);
+    return next(error);
+  }
+  // Ensure user is admin and product location matches admin location
+  const isAuthorized =
+    variant._id.equals(product) &&
+    req.role === "admin" &&
+    variant.location === req.location;
+  // Update variant
+  const session = mongoose.startSession();
+  try {
+    await session.withTransaction(async (session) => {
+      variant.variantName = variantName;
+      variant.location = location;
+      variant.price = price;
+      variant.product = product;
+      variant.attributes = attributes;
+      variant.stock = stock;
+      await variant.save({ session });
+    });
+    // Save and return response
+    res.status(200).json({
+      message: "Variant updated",
+      code: "VARIANT_UPDATED",
+    });
+  } catch (e) {
+    const error = new Error(e.message);
+    error.code = "VARIANT_UPDATE_FAILED";
+    error.status = 400;
+    return next(error);
+  } finally {
+    await session.endSession();
+  }
+};

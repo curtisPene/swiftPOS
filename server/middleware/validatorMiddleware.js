@@ -1,6 +1,6 @@
 const { body } = require("express-validator");
 
-// Validate POST /api/auth/signup request
+// Validate POST /api/auth/signup
 exports.signupValidator = [
   body("firstName", "First name is required").trim().escape().notEmpty(),
   body("lastName", "Last name is required").trim().escape().notEmpty(),
@@ -13,7 +13,7 @@ exports.signupValidator = [
   body("password", "Password is required").trim().escape().notEmpty(),
 ];
 
-// Validate POST /api/auth/login request
+// Validate POST /api/auth/login
 exports.loginValidator = [
   body("email", "Valid email is required")
     .trim()
@@ -52,13 +52,25 @@ exports.addProductValidator = [
   }),
 ];
 
+// Validate PATCH /api/admin/product/:productId
 exports.updateProductValidator = [
   body("brand").notEmpty().trim().escape(),
   body("description").notEmpty().trim().escape(),
   body("category").notEmpty().trim().escape(),
 ];
 
+// Validate POST /api/admin/product/:productId/variant
 exports.addVariantValidator = [
+  body("variantName", "Variant name is required").notEmpty().trim().escape(),
+  body("location", "Location is required").notEmpty().trim().escape(),
+  body("price", "Price is required").notEmpty().trim().escape(),
+  body("attributes", "Attributes are required").notEmpty().trim().escape(),
+  body("stock", "Stock is required").notEmpty().trim().escape(),
+  body("product", "Product is required").notEmpty().trim().escape(),
+];
+
+// Validate PATCH /api/admin/product/:variantId
+exports.updateVariantValidator = [
   body("variantName", "Variant name is required").notEmpty().trim().escape(),
   body("location", "Location is required").notEmpty().trim().escape(),
   body("price", "Price is required").notEmpty().trim().escape(),
