@@ -216,7 +216,7 @@ exports.addVariant = async (req, res, next) => {
   const allowUpdate =
     req.role === "admin" && productobj.location.toString() === location;
   if (!allowUpdate) {
-    const error = new Error("Not authorized to update this product");
+    const error = new Error("Not authorized. User must be admin at location");
     error.code = "USER_NOT_AUTHORIZED";
     error.status = 401;
     return next(error);
@@ -230,9 +230,12 @@ exports.addVariant = async (req, res, next) => {
     attributes,
   });
   // Ensure user is admin and product location matches admin location
-  userAuthorized = product.location === req.location && req.role === "admin";
+  userAuthorized =
+    productobj.location.toString() === req.location && req.role === "admin";
   if (!userAuthorized) {
-    const error = new Error("Not authorized to add variant");
+    const error = new Error(
+      "Not authorized. User and request location do not match product location"
+    );
     error.code = "USER_NOT_AUTHORIZED";
     error.status = 401;
     return next(error);
