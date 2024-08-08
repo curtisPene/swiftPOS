@@ -17,8 +17,15 @@ router.patch(
   asyncErrorMiddleware(adminController.updateProduct)
 );
 
-router.delete("/product/:variantId", adminController.deleteVariant);
+router.delete(
+  "/product/:variantId",
+  asyncErrorMiddleware(adminController.deleteVariant)
+);
 
-router.post("/api/product/:productId/variant", adminController.addVariant);
+router.post(
+  "/product/:productId/variant",
+  validator.addVariantValidator,
+  asyncErrorMiddleware(adminController.addVariant)
+);
 
 module.exports = router;

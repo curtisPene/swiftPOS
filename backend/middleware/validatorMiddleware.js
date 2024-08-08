@@ -58,4 +58,11 @@ exports.updateProductValidator = [
   body("category").notEmpty().trim().escape(),
 ];
 
-exports.addVariantValidator = [];
+exports.addVariantValidator = [
+  body("variantName", "Variant name is required").notEmpty().trim().escape(),
+  body("location", "Location is required").notEmpty().trim().escape(),
+  body("price", "Price is required").notEmpty().trim().escape(),
+  body("attributes", "Attributes are required").notEmpty().trim().escape(),
+  body("stock", "Stock is required").notEmpty().trim().escape(),
+  body("product", "Product is required").notEmpty().trim().escape(),
+];

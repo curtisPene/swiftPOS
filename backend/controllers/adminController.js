@@ -33,10 +33,9 @@ exports.addProduct = async (req, res, next) => {
   });
   // Get location from database - id stored in request object
   let location;
-  try {
-    location = await Location.findById(locationId);
-  } catch (e) {
-    console.log(e.message);
+
+  location = await Location.findById(locationId);
+  if (!location) {
     const error = new Error("Invalid location specified in request");
     error.code = "LOCATION_INVALID_REQUEST";
     return next(error);
@@ -127,17 +126,17 @@ exports.deleteVariant = async (req, res, next) => {
   const { variantId } = req.params;
 
   // Fetch variant from database
-  const variant = ProductVariant.findById(variantId);
+  const variant = await ProductVariant.findById(variantId);
 
   if (!variant) {
     const error = new Error("Incorrect variant id");
     error.code = "VARIANT_NOT_FOUND";
-    error.status(404);
+    error.status = 404;
     return next(error);
   }
 
   // Fetch product from database
-  const product = Product.findById(variant.product).populate("variants");
+  const product = await Product.findById(variant.product).populate("variants");
 
   if (!product) {
     const error = new Error("Referenced product not found");
@@ -157,13 +156,13 @@ exports.deleteVariant = async (req, res, next) => {
     return next(error);
   }
 
-  const deleteProduct = product.products.length === 1;
+  const deleteProduct = product.variants.length === 1;
 
   // Start mongoose session
   const session = await mongoose.startSession();
 
   try {
-    session.withTransaction(async (session) => {
+    await session.withTransaction(async (session) => {
       // If variant is not the only variant, remove from product variants array
       if (!deleteProduct) {
         product.variants = product.variants.filter((variant) => {
@@ -176,6 +175,10 @@ exports.deleteVariant = async (req, res, next) => {
         await ProductVariant.findByIdAndDelete(variant._id, { session });
       }
     });
+    res.status(200).json({
+      message: "Delete operation successful",
+      code: "VARIANT_DELETED",
+    });
   } catch (e) {
     console.log(e.message);
     const error = new Error("Failed to delete");
@@ -183,20 +186,73 @@ exports.deleteVariant = async (req, res, next) => {
     error.status = 400;
     return next(error);
   } finally {
-    session.endSession();
+    await session.endSession();
   }
-
-  res.status(200).json({
-    message: "Delete operation successful",
-    code: "VARIANT_DELETED",
-  });
 };
 
 exports.addVariant = async (req, res, next) => {
   // Check for validation errors
+  const errors = validationResult(req);
+
+  if (!errors.isEmpty()) {
+    const error = new Error("Validation failed");
+    error.message = errors.array();
+    error.code = "VALIDATION_ERROR";
+    error.status = 400;
+    return next(error);
+  }
   // Get matched data
+  const { variantName, location, price, product, attributes } =
+    matchedData(req);
   // Get product from database
+  const productobj = await Product.findById(product);
+
+  if (!productobj) {
+    const error = new Error("Incorrect product id");
+    error.code = "PRODUCT_NOT_FOUND";
+    return next(error);
+  }
+  // Ensure user is admin at product location
+  const allowUpdate =
+    req.role === "admin" && productobj.location.toString() === location;
+  if (!allowUpdate) {
+    const error = new Error("Not authorized to update this product");
+    error.code = "USER_NOT_AUTHORIZED";
+    error.status = 401;
+    return next(error);
+  }
+  // Create variant
+  const variant = new ProductVariant({
+    variantName,
+    location,
+    price,
+    product,
+    attributes,
+  });
   // Ensure user is admin and product location matches admin location
-  // Add variant to product
-  // Save and return response
+  userAuthorized = product.location === req.location && req.role === "admin";
+  if (!userAuthorized) {
+    const error = new Error("Not authorized to add variant");
+    error.code = "USER_NOT_AUTHORIZED";
+    error.status = 401;
+    return next(error);
+  }
+  const session = await mongoose.startSession();
+  try {
+    // Add variant to product
+    productobj.variants.push(variant);
+    await productobj.save({ session });
+    // Save and return response
+    res.status(201).json({
+      message: "Variant added",
+      code: "VARIANT_ADDED_VARIANT_TO_PRODUCT",
+    });
+  } catch (error) {
+    console.log(error.message);
+    const code = "VARIANT_ADD_FAILED";
+    error.status = 400;
+    return next(error);
+  } finally {
+    await session.endSession();
+  }
 };

@@ -134,14 +134,14 @@ exports.postLogin = async (req, res, next) => {
   );
 
   // Set cookies in the response
-  res.cookie("accessToken", accessToken, {
+  res.cookie("swf_access", accessToken, {
     httpOnly: true,
     secure: process.env.NODE_ENV === "production", // Ensure secure in production
     sameSite: "Strict",
     maxAge: 15 * 60 * 1000, // 15 minutes
   });
 
-  res.cookie("refreshToken", refreshToken, {
+  res.cookie("swf_refresh", refreshToken, {
     httpOnly: true,
     secure: process.env.NODE_ENV === "production", // Ensure secure in production
     sameSite: "Strict",
