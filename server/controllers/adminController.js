@@ -328,6 +328,7 @@ exports.updateVariant = async (req, res, next) => {
     res.status(200).json({
       message: "Variant updated",
       code: "VARIANT_UPDATED",
+      data: variant,
     });
   } catch (e) {
     const error = new Error(e.message);
