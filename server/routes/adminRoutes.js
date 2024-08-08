@@ -34,7 +34,7 @@ router.post(
 
 // Update variant
 router.patch(
-  "/product/:variantId",
+  "/product/variant/:variantId",
   validator.updateVariantValidator,
   asyncErrorMiddleware(adminController.updateVariant)
 );

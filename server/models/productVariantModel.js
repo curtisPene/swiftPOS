@@ -32,7 +32,10 @@ const productVariantSchema = new mongoose.Schema(
       type: Number,
       required: true,
     },
-    attributes: [],
+    attributes: {
+      type: [attributeSchema],
+      required: true,
+    },
     stock: {
       type: Number,
       default: 0,

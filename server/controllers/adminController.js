@@ -275,8 +275,11 @@ exports.updateVariant = async (req, res, next) => {
   // Get matched data
   const { variantName, location, product, price, attributes, stock } =
     matchedData(req);
-  // Get product variant from database
-  const variant = await ProductVariant.findById(product);
+  // Get product variant from database - id in req.params
+  const { variantId } = req.params;
+  const variant = await ProductVariant.findById(variantId).populate(
+    "attributes"
+  );
 
   if (!variant) {
     const error = new Error("Incorrect variant id");
@@ -286,19 +289,39 @@ exports.updateVariant = async (req, res, next) => {
   }
   // Ensure user is admin and product location matches admin location
   const isAuthorized =
-    variant._id.equals(product) &&
-    req.role === "admin" &&
-    variant.location === req.location;
+    req.role === "admin" && variant.location.toString() === req.location;
+
+  if (!isAuthorized) {
+    const error = new Error("Not authorized. User must be admin at location");
+    error.code = "USER_NOT_AUTHORIZED";
+    error.status = 401;
+    return next(error);
+  }
   // Update variant
-  const session = mongoose.startSession();
+  variant.variantName = variantName;
+  variant.location = location;
+  variant.price = price;
+  variant.product = product;
+
+  attributes.forEach((newAttr) => {
+    const existingAttr = variant.attributes.find(
+      (attr, index) => attr.key === newAttr.key
+    );
+
+    if (existingAttr) {
+      // Update the existing attribute value
+      existingAttr.value = newAttr.value;
+    } else {
+      // Add the new attribute to the array
+      variant.attributes.push(newAttr);
+    }
+  });
+
+  variant.stock = stock;
+
+  const session = await mongoose.startSession();
   try {
     await session.withTransaction(async (session) => {
-      variant.variantName = variantName;
-      variant.location = location;
-      variant.price = price;
-      variant.product = product;
-      variant.attributes = attributes;
-      variant.stock = stock;
       await variant.save({ session });
     });
     // Save and return response
