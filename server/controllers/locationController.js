@@ -1,6 +1,9 @@
+const { matchedData, validationResult } = require("express-validator");
 const Location = require("../models/locationModel");
 const Product = require("../models/productModel");
 const ProductVariant = require("../models/productVariantModel");
+const Sale = require("../models/saleModel");
+const mongoose = require("mongoose");
 
 exports.getProducts = async (req, res, next) => {
   // Get location id from request body
@@ -59,6 +62,7 @@ exports.getProduct = async (req, res, next) => {
   res.send(product);
 };
 
+// Get a single variant for a product line
 exports.getVariant = async (req, res, next) => {
   // Get variant id from request params
   const { variantId } = req.params;

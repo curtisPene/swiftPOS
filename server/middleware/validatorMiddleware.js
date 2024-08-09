@@ -80,3 +80,14 @@ exports.updateVariantValidator = [
   body("stock", "Stock is required").notEmpty().trim().escape(),
   body("product", "Product is required").notEmpty().trim().escape(),
 ];
+
+// Validate POST /api/location/sale
+exports.postSaleValidator = [
+  body("user").notEmpty().trim().escape(),
+  body("location").notEmpty().trim().escape(),
+  body("transactionItems").notEmpty().isArray(),
+  body("tax").notEmpty().trim().escape(),
+  body("totalPrice").notEmpty().trim().escape(),
+  body("paymentMethod").notEmpty().trim().escape(),
+  body("paymentReference").notEmpty().trim().escape(),
+];
