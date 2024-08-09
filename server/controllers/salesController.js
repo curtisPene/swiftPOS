@@ -74,3 +74,20 @@ exports.postSale = async (req, res, next) => {
     await session.endSession();
   }
 };
+
+// Get all sales at location
+exports.getSales = async (req, res, next) => {
+  // Get location id from req.location
+  const locationId = req.location;
+  // Retrieve location from database and populate sales
+  const location = await Location.findById(locationId).populate("sales");
+  if (!location) {
+    const error = new Error("Could not fetch location with specified id");
+    error.code = "LOCATION_NOT_FOUND";
+    error.status = 404;
+    return next(error);
+  }
+  const hasSales = location.sales.length > 0;
+  // Return response
+  res.status(200).send({ sales: hasSales ? location.sales : [] });
+};

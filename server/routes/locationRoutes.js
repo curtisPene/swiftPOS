@@ -28,4 +28,7 @@ router.post(
   asyncErrorMiddleware(salesController.postSale)
 );
 
+// Get all sales for location
+router.get("/sales", asyncErrorMiddleware(salesController.getSales));
+
 module.exports = router;
