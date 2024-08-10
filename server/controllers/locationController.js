@@ -6,35 +6,43 @@ const Sale = require("../models/saleModel");
 const mongoose = require("mongoose");
 
 exports.getProducts = async (req, res, next) => {
-  // Get location id from request body
-  const locationId = req.body.locationId;
+  // Get location id from request
+  const locationId = req.location;
+
   // Get location - populate products with variants
+  let location;
   try {
-    const locationProducts = await Location.findById(locationId).populate(
-      "products"
-    );
+    location = await Location.findById(locationId).populate("products");
     // Send response if location has no products to fetch
-    if (!locationProducts) {
-      return res.status(200).json({
-        message: "No products found at location",
-        code: "LOCATION_PRODUCTS_NOT_FOUND",
-        data: {
-          products: [],
-        },
-      });
-    }
-    // Return location products
-    return res.status(200).json({
-      message: "Location products fetched successfully",
-      code: "LOCATION_PRODUCTS_FOUND",
-      data: locationProducts,
-    });
   } catch (e) {
     console.log(e.message);
     const error = new Error("Could not fetch products for specified location");
+    error.status = 500;
     error.code = "LOCATION_ERROR_LOADING_REQUESTED_DATA";
     return next(error);
   }
+  if (!location) {
+    return res.status(200).json({
+      message: "Request location does not match any locations",
+      code: "LOCATION_NOT_FOUND",
+      data: {
+        products: [],
+      },
+    });
+  }
+  // Verify user has admin role and is admin of requrested location
+  if (req.role !== "admin" && location.admin.toString() !== req.user) {
+    const error = new Error("User not authorized to perform this action");
+    error.code = "USER_UNAUTHORIZED";
+    error.status = 401;
+    return next(error);
+  }
+  // Return location products
+  return res.status(200).json({
+    message: "Location products fetched successfully",
+    code: "LOCATION_PRODUCTS_FOUND",
+    data: location.products,
+  });
 };
 
 // Get a single product and its variants for location
