@@ -51,26 +51,25 @@ exports.postSignup = async (req, res, next) => {
       // Save location and user
       await user.save({ session });
       await location.save({ session });
-
       // Add refs to each other
       user.location = location._id;
       location.admin = user._id;
       await user.save({ session });
       await location.save({ session });
     });
+    // return response
+    res.status(201).json({
+      message: "User created",
+      code: "USER_CREATED",
+    });
   } catch (e) {
     console.log(e.message);
     const error = new Error("Failed to save user");
+    error.status = 500;
     return next(error);
   } finally {
-    session.endSession();
+    await session.endSession();
   }
-
-  // return response
-  res.status(201).json({
-    message: "User created",
-    code: "USER_CREATED",
-  });
 };
 
 exports.postLogin = async (req, res, next) => {

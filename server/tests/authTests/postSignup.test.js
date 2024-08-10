@@ -9,7 +9,11 @@ describe("POST /api/auth/signup", () => {
     await mongoose.connect(process.env.MONGO_TEST_URI);
   });
 
-  it("should create a new user and return a 201 status code", async () => {
+  beforeEach(async () => {
+    await mongoose.connection.db.dropDatabase(); // Reset the database before each test
+  });
+
+  test("should create a new user and return a 201 status code", async () => {
     const response = await request(app).post("/api/auth/signup").send({
       email: "curtispene92@gmail.com",
       password: "crowbar69",
@@ -23,7 +27,7 @@ describe("POST /api/auth/signup", () => {
     expect(response.body).toHaveProperty("code", "USER_CREATED");
   });
 
-  it("Should return 400 status code if validation fails", async () => {
+  test("Should return 400 status code if validation fails", async () => {
     const response = await request(app).post("/api/auth/signup").send({});
 
     expect(response.body).toHaveProperty("status", 400);

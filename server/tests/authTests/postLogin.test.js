@@ -32,17 +32,17 @@ describe("POST /api/auth/login", () => {
 
     const cookies = response.headers["set-cookie"];
     expect(cookies).toBeDefined();
-    expect(cookies[0].split("=")[0]).toBe("swf_refresh");
-    expect(cookies[1].split("=")[0]).toBe("swf_access");
+    expect(cookies[0].split("=")[0]).toBe("swf_access");
+    expect(cookies[1].split("=")[0]).toBe("swf_refresh");
 
     expect(
-      jwt.verify(
-        cookies[0].split("=")[1].split(";")[0],
-        process.env.JWT_SECRET_REFRESH
-      )
+      jwt.verify(cookies[0].split("=")[1].split(";")[0], process.env.JWT_SECRET)
     ).toBeTruthy();
     expect(
-      jwt.verify(cookies[1].split("=")[1].split(";")[0], process.env.JWT_SECRET)
+      jwt.verify(
+        cookies[1].split("=")[1].split(";")[0],
+        process.env.JWT_SECRET_REFRESH
+      )
     ).toBeTruthy();
     expect(response.body).toHaveProperty("code", "USER_AUTHENTICATED");
   });

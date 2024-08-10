@@ -97,7 +97,6 @@ describe("GET /api/location/products", () => {
       },
       process.env.JWT_SECRET
     );
-    console.log(jwt.decode(userRoletoken), location);
   });
 
   afterAll(async () => {

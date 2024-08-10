@@ -8,7 +8,7 @@ const jwt = require("jsonwebtoken");
 describe("POST /api/admin/addProduct", () => {
   let location, user, accessToken;
   beforeAll(async () => {
-    const connection = await mongoose.connect(process.env.MONGO_TEST_URI);
+    await mongoose.connect(process.env.MONGO_TEST_URI);
     user = await User.create({
       email: "curtispene92@gmail.com",
       password: "crowbar69",
@@ -48,7 +48,7 @@ describe("POST /api/admin/addProduct", () => {
         variant: {
           variantName: "Coke",
           price: 3.8,
-          attributes: [{ volume: "600ml" }],
+          attributes: [{ key: "Volume", value: "600ml" }],
         },
       });
 

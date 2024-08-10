@@ -11,7 +11,9 @@ describe("PATCH api/admin/product/:productId", () => {
   let adminUser, location, product, accessToken, userRoletoken;
   beforeAll(async () => {
     // Connect to database
-    const connection = await mongoose.connect(process.env.MONGO_TEST_URI);
+    await mongoose.connect(process.env.MONGO_TEST_URI);
+    await mongoose.connect(process.env.MONGO_TEST_URI);
+
     // Create admin user
     adminUser = await User.create({
       email: "curtispene92@gmail.com",
@@ -37,7 +39,7 @@ describe("PATCH api/admin/product/:productId", () => {
     // Create user with role-user
     const user = await User.create({
       email: "user@example.com",
-      location: new mongoose.Types.ObjectId(),
+      location: location._id,
       password: "password",
       firstName: "test",
       lastName: "user",
@@ -46,6 +48,7 @@ describe("PATCH api/admin/product/:productId", () => {
 
     // Add user to location
     location.users.push(user._id);
+
     await location.save();
 
     // Create product
@@ -63,13 +66,16 @@ describe("PATCH api/admin/product/:productId", () => {
       location: location._id,
       product: product._id,
       price: 3.8,
-      attributes: [{ volume: "600ml" }],
+      attributes: [{ key: "Volume", value: "600ml" }],
       stock: 10,
     });
 
     // Add variant to product
     product.variants.push(productVariant._id);
     await product.save();
+    // Add product to location
+    location.products.push(product._id);
+    await location.save();
 
     // Generate access token
     accessToken = jwt.sign(

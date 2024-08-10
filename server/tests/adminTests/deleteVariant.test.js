@@ -17,6 +17,9 @@ describe("DELETE /api/admin/product/:variantId", () => {
     userRoleToken;
   beforeAll(async () => {
     await mongoose.connect(process.env.MONGO_TEST_URI);
+    await mongoose.connect(process.env.MONGO_TEST_URI);
+
+    // Create admin user
     adminUser = await User.create({
       email: "curtispene92@gmail.com",
       password: "crowbar69",
@@ -41,7 +44,7 @@ describe("DELETE /api/admin/product/:variantId", () => {
     // Create user with role-user
     user = await User.create({
       email: "user@example.com",
-      location: new mongoose.Types.ObjectId(),
+      location: location._id,
       password: "password",
       firstName: "test",
       lastName: "user",
@@ -50,6 +53,7 @@ describe("DELETE /api/admin/product/:variantId", () => {
 
     // Add user to location
     location.users.push(user._id);
+
     await location.save();
 
     // Create product
@@ -67,13 +71,16 @@ describe("DELETE /api/admin/product/:variantId", () => {
       location: location._id,
       product: product._id,
       price: 3.8,
-      attributes: [{ volume: "600ml" }],
+      attributes: [{ key: "Volume", value: "600ml" }],
       stock: 10,
     });
 
     // Add variant to product
     product.variants.push(productVariant._id);
     await product.save();
+    // Add product to location
+    location.products.push(product._id);
+    await location.save();
 
     // Generate access token
     accessToken = jwt.sign(
