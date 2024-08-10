@@ -3,6 +3,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
+const cors = require("cors");
 
 const authRoutes = require("./routes/authRoutes");
 const isAuth = require("./middleware/isAuth");
@@ -10,6 +11,14 @@ const locationRoutes = require("./routes/locationRoutes");
 const adminRoutes = require("./routes/adminRoutes");
 
 const app = express();
+
+app.use(
+  cors({
+    origin: process.env.CLIENT_ORIGIN,
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true,
+  })
+);
 
 app.use(cookieParser());
 app.use(bodyParser.json());
