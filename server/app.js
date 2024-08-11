@@ -30,7 +30,7 @@ app.use("/api/admin", isAuth, adminRoutes);
 app.use("/api/location", isAuth, locationRoutes);
 
 app.use((err, req, res, next) => {
-  console.log(err.stack);
+  console.log(err.message);
   const status = err.status || 500;
   const message = err.message || "Internal Server Error";
   const code = err.code || "SERVER_INTERNAL_ERROR";

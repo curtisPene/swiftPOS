@@ -75,7 +75,6 @@ exports.postSignup = async (req, res, next) => {
 exports.postLogin = async (req, res, next) => {
   // Check for validation errors
   const errors = validationResult(req);
-
   if (!errors.isEmpty()) {
     const error = new Error("Validation failed");
     error.status = 400;
