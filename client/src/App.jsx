@@ -1,14 +1,19 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import LoginPage from "./pages/LoginPage";
-import authAction from "./actions/authAction";
 import ErrorPage from "./pages/ErrorPage";
+import loginAction from "./actions/loginAction";
+import Dashboard from "./pages/Dashboard";
 function App() {
   const router = createBrowserRouter([
     {
       errorElement: <ErrorPage />,
       path: "/",
       element: <LoginPage />,
-      action: authAction,
+      action: loginAction,
+    },
+    {
+      path: "/dashboard",
+      element: <Dashboard />,
     },
   ]);
 
