@@ -21,4 +21,7 @@ router.post("/login", [
   asyncErrorMiddleware(authController.postLogin),
 ]);
 
+// POST /api/auth/logout route handler - logs out a user
+router.post("/logout", asyncErrorMiddleware(authController.postLogout));
+
 module.exports = router;

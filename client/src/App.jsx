@@ -7,7 +7,7 @@ function App() {
   const router = createBrowserRouter([
     {
       errorElement: <ErrorPage />,
-      path: "/",
+      path: "/login",
       element: <LoginPage />,
       action: loginAction,
     },

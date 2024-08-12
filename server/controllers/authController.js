@@ -151,3 +151,14 @@ exports.postLogin = async (req, res, next) => {
     message: "User logged in",
   });
 };
+
+exports.postLogout = (req, res, next) => {
+  // Clear cookies
+  res.clearCookie("swf_access");
+  res.clearCookie("swf_refresh");
+  res.status(200).json({
+    message: "User logged out",
+    code: "USER_LOGGED_OUT",
+  });
+  // Send response
+};

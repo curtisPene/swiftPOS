@@ -1,8 +1,11 @@
+import useLogout from "../hooks/useLogout";
+
 const Dashboard = () => {
+  const logout = useLogout();
   return (
     <>
       <h1>Dashboard</h1>
-      <button>Logout</button>
+      <button onClick={logout}>Logout</button>
     </>
   );
 };
