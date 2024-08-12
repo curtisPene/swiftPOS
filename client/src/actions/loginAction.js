@@ -12,8 +12,6 @@ const loginAction = async ({ request }) => {
     },
     credentials: "include",
   });
-
-  console.log(response);
   if (!response.ok) {
     return response;
   }

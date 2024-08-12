@@ -3,7 +3,6 @@ import { json, useNavigate } from "react-router-dom";
 const useLogout = () => {
   const navigate = useNavigate();
   const logout = async () => {
-    console.log("logging out");
     try {
       // Send logout request
       const response = await fetch("http://localhost:8080/api/auth/logout", {
