@@ -31,4 +31,10 @@ router.post("/passwordreset", [
   asyncErrorMiddleware(authController.postReset),
 ]);
 
+// PATCH /api/auth/passwordreset/:token route handler - resets a user's password
+router.patch(
+  "/passwordreset",
+  asyncErrorMiddleware(authController.patchPasswordReset)
+);
+
 module.exports = router;

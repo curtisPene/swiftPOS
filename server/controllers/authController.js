@@ -214,3 +214,36 @@ exports.postReset = async (req, res, next) => {
     return next(e);
   }
 };
+
+exports.patchPasswordReset = async (req, res, next) => {
+  // Get current email and new password from request
+  const { email, password } = req.body;
+  // Find user via email
+  const user = await User.findOne({ email: email });
+  if (!user) {
+    const error = new Error("Email in request not found");
+    error.status = 400;
+    error.code = "EMAIL_NOT_FOUND";
+    return next(error);
+  }
+  // Hash new password
+  const hashedPassword = await bcrypt.hash(password, 10);
+  // Update user email
+  try {
+    await User.findOneAndUpdate(
+      { _id: user._id },
+      { password: hashedPassword }
+    );
+  } catch (updateError) {
+    const error = new Error("Could not update user");
+    error.status = 500;
+    error.code = "USER_UPDATE_FAILED";
+    return next(updateError);
+  }
+
+  // Send response
+  res.status(200).json({
+    message: "User password updated",
+    code: "USER_PASSWORD_UPDATED",
+  });
+};
