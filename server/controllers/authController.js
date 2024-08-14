@@ -1,6 +1,7 @@
 const bcrypt = require("bcrypt");
 const { validationResult, matchedData } = require("express-validator");
 const jwt = require("jsonwebtoken");
+const sgMail = require("@sendgrid/mail");
 
 const User = require("../models/userModel");
 const Location = require("../models/locationModel");
@@ -161,4 +162,55 @@ exports.postLogout = (req, res, next) => {
     code: "USER_LOGGED_OUT",
   });
   // Send response
+};
+
+exports.postReset = async (req, res, next) => {
+  // Check for validation errors
+  const errors = validationResult(req);
+  if (!errors.isEmpty()) {
+    const error = new Error("Validation failed");
+    error.status = 400;
+    error.message = errors.array();
+    error.code = "USER_VALIDATION_FAILED";
+    return next(error);
+  }
+  // Receive email from matched data
+  const { email } = matchedData(req);
+  // Verify email against user database
+  const user = await User.findOne({ email: email });
+
+  if (!user) {
+    return res.send({
+      message: "User not found",
+      code: "USER_NOT_FOUND",
+      status: 400,
+    });
+  }
+
+  // Send email
+  sgMail.setApiKey(process.env.SEND_GRID_API);
+  const msg = {
+    to: "curtispene92@gmail.com",
+    from: process.env.SEND_GRID_SENDER,
+    templateId: process.env.SEND_GRID_TEMPLATE_ID,
+    dynamic_template_data: {
+      first_name: user.firstName,
+    },
+  };
+
+  try {
+    await sgMail.send(msg);
+    console.log("Password reset email sent successfully");
+    res.status(200).json({
+      message: "Password reset email sent",
+      code: "PASSWORD_RESET_EMAIL_SENT",
+      status: 200,
+    });
+  } catch (e) {
+    console.error("Error sending password reset email:");
+    const error = new Error(e.message);
+    error.status = 500;
+    error.code = "PASSWORD_RESET_EMAIL_FAILED";
+    return next(e);
+  }
 };

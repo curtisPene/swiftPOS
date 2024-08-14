@@ -91,3 +91,13 @@ exports.postSaleValidator = [
   body("paymentMethod").notEmpty().trim().escape(),
   body("paymentReference").notEmpty().trim().escape(),
 ];
+
+// Validate POST /api/auth/reset
+exports.postResetValidator = [
+  body("email", "Valid email is required")
+    .trim()
+    .escape()
+    .notEmpty()
+    .isEmail()
+    .normalizeEmail(),
+];
