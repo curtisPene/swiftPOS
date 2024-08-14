@@ -133,155 +133,249 @@
     </mxGraphModel>
   </diagram>
   <diagram id="8Ey6CvOB55q3MK9NUdou" name="Dashboard">
-    <mxGraphModel dx="1687" dy="868" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1615" dy="803" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="XnQq4tsRSRW_3GJyHeWu-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="XnQq4tsRSRW_3GJyHeWu-2" target="XnQq4tsRSRW_3GJyHeWu-4">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="XnQq4tsRSRW_3GJyHeWu-2" value="User access&lt;div&gt;the application&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="490" y="460" width="100" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="XnQq4tsRSRW_3GJyHeWu-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="XnQq4tsRSRW_3GJyHeWu-4" target="XnQq4tsRSRW_3GJyHeWu-11">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="XnQq4tsRSRW_3GJyHeWu-4" value="User views main&lt;div&gt;dashboard of&lt;/div&gt;&lt;div&gt;the application&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="650" y="440" width="100" height="100" as="geometry" />
-        </mxCell>
-        <mxCell id="XnQq4tsRSRW_3GJyHeWu-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="XnQq4tsRSRW_3GJyHeWu-11" target="XnQq4tsRSRW_3GJyHeWu-12">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="XnQq4tsRSRW_3GJyHeWu-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="XnQq4tsRSRW_3GJyHeWu-11" target="XnQq4tsRSRW_3GJyHeWu-13">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="XnQq4tsRSRW_3GJyHeWu-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="XnQq4tsRSRW_3GJyHeWu-11" target="XnQq4tsRSRW_3GJyHeWu-14">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="XnQq4tsRSRW_3GJyHeWu-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="XnQq4tsRSRW_3GJyHeWu-11" target="XnQq4tsRSRW_3GJyHeWu-16">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="XnQq4tsRSRW_3GJyHeWu-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="XnQq4tsRSRW_3GJyHeWu-11" target="XnQq4tsRSRW_3GJyHeWu-17">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="XnQq4tsRSRW_3GJyHeWu-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="XnQq4tsRSRW_3GJyHeWu-11" target="XnQq4tsRSRW_3GJyHeWu-18">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="XnQq4tsRSRW_3GJyHeWu-11" value="User chooses to&amp;nbsp;&lt;div&gt;navigate to different sections such as products,&lt;/div&gt;&lt;div&gt;sales, reports&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="810" y="440" width="100" height="100" as="geometry" />
-        </mxCell>
-        <mxCell id="XnQq4tsRSRW_3GJyHeWu-12" value="User views and interacts with the Products section" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="1070" y="120" width="100" height="100" as="geometry" />
-        </mxCell>
-        <mxCell id="XnQq4tsRSRW_3GJyHeWu-13" value="&#xa;User views and interacts with the Sales section&#xa;&#xa;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="1070" y="260" width="100" height="100" as="geometry" />
-        </mxCell>
-        <mxCell id="XnQq4tsRSRW_3GJyHeWu-14" value="User views and interacts with the Reports section" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="1070" y="390" width="100" height="100" as="geometry" />
-        </mxCell>
-        <mxCell id="XnQq4tsRSRW_3GJyHeWu-15" value="User views and interacts with the Inventory section" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="1070" y="520" width="100" height="100" as="geometry" />
-        </mxCell>
-        <mxCell id="XnQq4tsRSRW_3GJyHeWu-16" value="User views and interacts with the reports section" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="1070" y="630" width="100" height="100" as="geometry" />
-        </mxCell>
-        <mxCell id="XnQq4tsRSRW_3GJyHeWu-17" value="User views and interacts with the payments section" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="1070" y="750" width="100" height="100" as="geometry" />
-        </mxCell>
-        <mxCell id="XnQq4tsRSRW_3GJyHeWu-18" value="User views and interacts with the notifications section" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="1070" y="870" width="100" height="100" as="geometry" />
-        </mxCell>
-        <mxCell id="XnQq4tsRSRW_3GJyHeWu-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.006;entryY=0.635;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="XnQq4tsRSRW_3GJyHeWu-11" target="XnQq4tsRSRW_3GJyHeWu-15">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="ET9BGdN6wAJWBJ6dI6yu-1" value="1. User Authentication&#xa;   - Sign up&#xa;   - Log in&#xa;   - Log out&#xa;   - Password reset&#xa;&#xa;&#xa;2. Dashboard Access&#xa;   - View dashboard&#xa;   - Navigate to different sections (e.g., Products, Sales, Reports)&#xa;&#xa;&#xa;3. Product Management&#xa;   - Add product&#xa;   - Edit product details&#xa;   - Manage product variants&#xa;   - Delete or archive product&#xa;&#xa;&#xa;4. Inventory Management&#xa;   - Track inventory levels&#xa;   - Update inventory&#xa;   - Set reorder alerts&#xa;&#xa;&#xa;5. Sales Management&#xa;   - Create a new sale&#xa;   - Add items to a sale&#xa;   - Apply discounts or offers&#xa;   - Complete sale transaction&#xa;   - Void or refund a sale&#xa;&#xa;&#xa;6. Customer Management&#xa;   - Add new customer&#xa;   - Edit customer details&#xa;   - View customer purchase history&#xa;&#xa;&#xa;7. Reporting&#xa;   - Generate sales reports&#xa;   - View product performance&#xa;   - Export reports&#xa;&#xa;&#xa;8. Settings and Configuration&#xa;   - Manage user roles and permissions&#xa;   - Customize app settings&#xa;   - Update business information&#xa;&#xa;&#xa;9. Payment Processing&#xa;   - Select payment method&#xa;   - Process payment&#xa;   - Handle payment errors or declined transactions&#xa;&#xa;&#xa;10. Notifications and Alerts&#xa;    - View and manage notifications&#xa;    - Set up alerts for low inventory or sales targets" style="text;whiteSpace=wrap;" vertex="1" parent="1">
+        <mxCell id="ET9BGdN6wAJWBJ6dI6yu-1" value="1. User Authentication&#xa;   - Sign up&#xa;   - Log in&#xa;   - Log out&#xa;   - Password reset&#xa;&#xa;&#xa;2. Dashboard Access&#xa;   - View dashboard&#xa;   - Navigate to different sections (e.g., Products, Sales, Reports)&#xa;&#xa;&#xa;3. Product Management&#xa;   - Add product&#xa;   - Edit product details&#xa;   - Manage product variants&#xa;   - Delete or archive product&#xa;&#xa;&#xa;4. Inventory Management&#xa;   - Track inventory levels&#xa;   - Update inventory&#xa;   - Set reorder alerts&#xa;&#xa;&#xa;5. Sales Management&#xa;   - Create a new sale&#xa;   - Add items to a sale&#xa;   - Apply discounts or offers&#xa;   - Complete sale transaction&#xa;   - Void or refund a sale&#xa;&#xa;&#xa;6. Customer Management&#xa;   - Add new customer&#xa;   - Edit customer details&#xa;   - View customer purchase history&#xa;&#xa;&#xa;7. Reporting&#xa;   - Generate sales reports&#xa;   - View product performance&#xa;   - Export reports&#xa;&#xa;&#xa;8. Settings and Configuration&#xa;   - Manage user roles and permissions&#xa;   - Customize app settings&#xa;   - Update business information&#xa;&#xa;&#xa;9. Payment Processing&#xa;   - Select payment method&#xa;   - Process payment&#xa;   - Handle payment errors or declined transactions&#xa;&#xa;&#xa;10. Notifications and Alerts&#xa;    - View and manage notifications&#xa;    - Set up alerts for low inventory or sales targets" style="text;whiteSpace=wrap;" parent="1" vertex="1">
           <mxGeometry x="10" y="10" width="380" height="890" as="geometry" />
+        </mxCell>
+        <mxCell id="68NjNx0a_AqUf3TJoTM--1" value="1. **View Dashboard**&#xa;   - User logs in and is redirected to the dashboard.&#xa;   - System displays an overview of key metrics (e.g., sales, inventory, notifications).&#xa;   - User reviews the information presented on the dashboard.&#xa;&#xa;&#xa;2. **Navigate to Different Sections**&#xa;   - From the dashboard, the user selects a section (e.g., Products, Sales, Reports).&#xa;   - System redirects the user to the selected section, displaying the relevant content.&#xa;   - User interacts with the selected section as needed." style="text;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="440" y="130" width="480" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="68NjNx0a_AqUf3TJoTM--5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="68NjNx0a_AqUf3TJoTM--2" target="68NjNx0a_AqUf3TJoTM--3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="68NjNx0a_AqUf3TJoTM--2" value="User logs in and is redirected to the dashboard" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="560" y="390" width="133.33" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="68NjNx0a_AqUf3TJoTM--6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="68NjNx0a_AqUf3TJoTM--3" target="68NjNx0a_AqUf3TJoTM--4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="68NjNx0a_AqUf3TJoTM--3" value="System displays an overview of key metrics (e.g. sales, inventory, etc)" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="760" y="380" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="68NjNx0a_AqUf3TJoTM--4" value="User reviews information presented on the dashboard" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="940" y="380" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="68NjNx0a_AqUf3TJoTM--10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="68NjNx0a_AqUf3TJoTM--7" target="68NjNx0a_AqUf3TJoTM--8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="68NjNx0a_AqUf3TJoTM--7" value="From the dashboard, the user selects a section" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="530" y="535" width="166.67" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="68NjNx0a_AqUf3TJoTM--11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="68NjNx0a_AqUf3TJoTM--8" target="68NjNx0a_AqUf3TJoTM--9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="68NjNx0a_AqUf3TJoTM--8" value="System redirects user to the selected section" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="760" y="535" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="68NjNx0a_AqUf3TJoTM--9" value="User interacts with the selected section as needed" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="910" y="527" width="115" height="115" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
   <diagram id="oy20ObqP9nqBbCuuLZpR" name="Product Management">
-    <mxGraphModel dx="2514" dy="868" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2577" dy="870" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="xkSeCWseFW73DzE7r6MW-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="xkSeCWseFW73DzE7r6MW-1" target="xkSeCWseFW73DzE7r6MW-2">
+        <mxCell id="02m3XyDNFQBm8fWto4tQ-1" value="1. **Add Product**&#xa;   - User navigates to the Products section from the dashboard.&#xa;   - User selects the option to add a new product.&#xa;   - System prompts the user to enter product details (e.g., name, description, category, price).&#xa;   - User submits the form.&#xa;   - System saves the product and confirms the addition.&#xa;&#xa;&#xa;2. **Edit Product Details**&#xa;   - User navigates to the Products section and selects an existing product.&#xa;   - System displays the product details with an option to edit.&#xa;   - User updates the necessary fields (e.g., name, price, description).&#xa;   - User submits the changes.&#xa;   - System saves the updates and confirms the changes.&#xa;&#xa;&#xa;3. **Manage Product Variants**&#xa;   - User selects a product to manage its variants.&#xa;   - System displays the existing variants and an option to add or edit variants.&#xa;   - User adds a new variant or edits an existing one (e.g., size, color, packaging).&#xa;   - User submits the variant information.&#xa;   - System updates the product with the new or edited variant.&#xa;&#xa;&#xa;4. **Delete or Archive Product**&#xa;   - User selects a product to delete or archive from the Products section.&#xa;   - System prompts the user to confirm the action.&#xa;   - If deleting, the system removes the product from the catalog.&#xa;   - If archiving, the system moves the product to an archived state, where it is no longer active but can be restored later.&#xa;   - System confirms the product has been deleted or archived." style="text;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-540" y="1180" width="560" height="470" as="geometry" />
+        </mxCell>
+        <mxCell id="90HHAPKfToBtOzx2FQQZ-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="02m3XyDNFQBm8fWto4tQ-2" target="02m3XyDNFQBm8fWto4tQ-4">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="xkSeCWseFW73DzE7r6MW-1" value="User access the product management section" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="60" y="370" width="150" height="90" as="geometry" />
+        <mxCell id="02m3XyDNFQBm8fWto4tQ-2" value="User navigates to the products section from the dashboard" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="40" y="440" width="150" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="xkSeCWseFW73DzE7r6MW-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="xkSeCWseFW73DzE7r6MW-2" target="xkSeCWseFW73DzE7r6MW-3">
+        <mxCell id="90HHAPKfToBtOzx2FQQZ-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="02m3XyDNFQBm8fWto4tQ-4" target="02m3XyDNFQBm8fWto4tQ-5">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="xkSeCWseFW73DzE7r6MW-2" value="User adds a new&amp;nbsp;&lt;div&gt;product to the&lt;/div&gt;&lt;div&gt;inventory&lt;/div&gt;" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="1">
-          <mxGeometry x="250" y="372.5" width="141.67" height="85" as="geometry" />
+        <mxCell id="02m3XyDNFQBm8fWto4tQ-4" value="User selects the option to add a new product" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="260" y="435" width="100" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="xkSeCWseFW73DzE7r6MW-3" value="user inputs details&amp;nbsp;&lt;div&gt;such as name,&amp;nbsp;&lt;/div&gt;&lt;div&gt;description, price,&amp;nbsp;&lt;/div&gt;&lt;div&gt;and category&lt;/div&gt;" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="1">
-          <mxGeometry x="414" y="360" width="183.33" height="110" as="geometry" />
-        </mxCell>
-        <mxCell id="xkSeCWseFW73DzE7r6MW-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="xkSeCWseFW73DzE7r6MW-4" target="xkSeCWseFW73DzE7r6MW-5">
+        <mxCell id="90HHAPKfToBtOzx2FQQZ-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="02m3XyDNFQBm8fWto4tQ-5" target="02m3XyDNFQBm8fWto4tQ-6">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="xkSeCWseFW73DzE7r6MW-4" value="System saves the new product to the databse" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="620" y="373" width="100" height="100" as="geometry" />
+        <mxCell id="02m3XyDNFQBm8fWto4tQ-5" value="System prompts the user to enter product details" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="1">
+          <mxGeometry x="410" y="440" width="141.67" height="85" as="geometry" />
         </mxCell>
-        <mxCell id="xkSeCWseFW73DzE7r6MW-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="xkSeCWseFW73DzE7r6MW-5" target="xkSeCWseFW73DzE7r6MW-6">
+        <mxCell id="02m3XyDNFQBm8fWto4tQ-6" value="User submits the form" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="620" y="435" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="90HHAPKfToBtOzx2FQQZ-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="02m3XyDNFQBm8fWto4tQ-8" target="02m3XyDNFQBm8fWto4tQ-9">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="xkSeCWseFW73DzE7r6MW-5" value="User selects an existing product to edit" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="85" y="580" width="100" height="100" as="geometry" />
-        </mxCell>
-        <mxCell id="xkSeCWseFW73DzE7r6MW-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="xkSeCWseFW73DzE7r6MW-6" target="xkSeCWseFW73DzE7r6MW-7">
+        <mxCell id="90HHAPKfToBtOzx2FQQZ-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="02m3XyDNFQBm8fWto4tQ-8" target="90HHAPKfToBtOzx2FQQZ-21">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="xkSeCWseFW73DzE7r6MW-6" value="User updates details such as name, description, price, and category" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="1">
-          <mxGeometry x="237.5" y="580" width="166.67" height="100" as="geometry" />
+        <mxCell id="02m3XyDNFQBm8fWto4tQ-8" value="System validates" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="620" y="585" width="125" height="125" as="geometry" />
         </mxCell>
-        <mxCell id="xkSeCWseFW73DzE7r6MW-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="xkSeCWseFW73DzE7r6MW-7" target="xkSeCWseFW73DzE7r6MW-9">
+        <mxCell id="02m3XyDNFQBm8fWto4tQ-9" value="System saves the product and confirms the addition" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="632.5" y="760" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="90HHAPKfToBtOzx2FQQZ-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="02m3XyDNFQBm8fWto4tQ-6" target="02m3XyDNFQBm8fWto4tQ-8">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="xkSeCWseFW73DzE7r6MW-7" value="User saves the updated product details" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="455.66" y="580" width="100" height="100" as="geometry" />
-        </mxCell>
-        <mxCell id="xkSeCWseFW73DzE7r6MW-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="xkSeCWseFW73DzE7r6MW-9" target="xkSeCWseFW73DzE7r6MW-10">
+        <mxCell id="90HHAPKfToBtOzx2FQQZ-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="90HHAPKfToBtOzx2FQQZ-6" target="90HHAPKfToBtOzx2FQQZ-7">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="xkSeCWseFW73DzE7r6MW-9" value="User adds or updates product variants" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="597.33" y="580" width="100" height="100" as="geometry" />
+        <mxCell id="90HHAPKfToBtOzx2FQQZ-6" value="User navigates to the products section and selects an existing product" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1052.5" width="166.66" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="xkSeCWseFW73DzE7r6MW-10" value="User deletes or archives a product from the inventory" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="85" y="760" width="100" height="100" as="geometry" />
-        </mxCell>
-        <mxCell id="xkSeCWseFW73DzE7r6MW-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="xkSeCWseFW73DzE7r6MW-11" target="xkSeCWseFW73DzE7r6MW-14">
+        <mxCell id="90HHAPKfToBtOzx2FQQZ-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="90HHAPKfToBtOzx2FQQZ-7" target="90HHAPKfToBtOzx2FQQZ-8">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="xkSeCWseFW73DzE7r6MW-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="xkSeCWseFW73DzE7r6MW-11" target="xkSeCWseFW73DzE7r6MW-13">
+        <mxCell id="90HHAPKfToBtOzx2FQQZ-7" value="System displays product details with an option to edit" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="260" y="1052.5" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="90HHAPKfToBtOzx2FQQZ-8" value="User updates the necessary fields" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="1">
+          <mxGeometry x="431" y="1072.5" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="90HHAPKfToBtOzx2FQQZ-9" value="System saves the product and&lt;div&gt;confirms the action&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="592.5" y="1212.5" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="90HHAPKfToBtOzx2FQQZ-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="90HHAPKfToBtOzx2FQQZ-10" target="90HHAPKfToBtOzx2FQQZ-11">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="xkSeCWseFW73DzE7r6MW-11" value="Confirm deletion" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="237.5" y="760" width="100" height="100" as="geometry" />
-        </mxCell>
-        <mxCell id="xkSeCWseFW73DzE7r6MW-12" value="User completes product management&lt;div&gt;task&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="555.66" y="772.5" width="125" height="75" as="geometry" />
-        </mxCell>
-        <mxCell id="xkSeCWseFW73DzE7r6MW-13" value="Delete or archival aborted" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="237.5" y="900" width="100" height="100" as="geometry" />
-        </mxCell>
-        <mxCell id="xkSeCWseFW73DzE7r6MW-14" value="Product is removed or archived" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="380" y="760" width="100" height="100" as="geometry" />
-        </mxCell>
-        <mxCell id="xkSeCWseFW73DzE7r6MW-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.01;entryY=0.44;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="xkSeCWseFW73DzE7r6MW-3" target="xkSeCWseFW73DzE7r6MW-4">
+        <mxCell id="90HHAPKfToBtOzx2FQQZ-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="90HHAPKfToBtOzx2FQQZ-10" target="90HHAPKfToBtOzx2FQQZ-9">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="xkSeCWseFW73DzE7r6MW-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="xkSeCWseFW73DzE7r6MW-10" target="xkSeCWseFW73DzE7r6MW-11">
+        <mxCell id="90HHAPKfToBtOzx2FQQZ-10" value="System validates" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="580" y="1040" width="125" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="90HHAPKfToBtOzx2FQQZ-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="90HHAPKfToBtOzx2FQQZ-11" target="90HHAPKfToBtOzx2FQQZ-12">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="xkSeCWseFW73DzE7r6MW-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="xkSeCWseFW73DzE7r6MW-14" target="xkSeCWseFW73DzE7r6MW-12">
+        <mxCell id="90HHAPKfToBtOzx2FQQZ-11" value="System displays invalid fields on form" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="770" y="1052.5" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="90HHAPKfToBtOzx2FQQZ-12" value="User updates the necessary fields" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="1">
+          <mxGeometry x="940" y="1057.5" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="90HHAPKfToBtOzx2FQQZ-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="90HHAPKfToBtOzx2FQQZ-8" target="90HHAPKfToBtOzx2FQQZ-10">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="P9m0KAPZKbixTcTGlO_T-1" value="1. User Authentication&#xa;   - Sign up&#xa;   - Log in&#xa;   - Log out&#xa;   - Password reset&#xa;&#xa;&#xa;2. Dashboard Access&#xa;   - View dashboard&#xa;   - Navigate to different sections (e.g., Products, Sales, Reports)&#xa;&#xa;&#xa;3. Product Management&#xa;   - Add product&#xa;   - Edit product details&#xa;   - Manage product variants&#xa;   - Delete or archive product&#xa;&#xa;&#xa;4. Inventory Management&#xa;   - Track inventory levels&#xa;   - Update inventory&#xa;   - Set reorder alerts&#xa;&#xa;&#xa;5. Sales Management&#xa;   - Create a new sale&#xa;   - Add items to a sale&#xa;   - Apply discounts or offers&#xa;   - Complete sale transaction&#xa;   - Void or refund a sale&#xa;&#xa;&#xa;6. Customer Management&#xa;   - Add new customer&#xa;   - Edit customer details&#xa;   - View customer purchase history&#xa;&#xa;&#xa;7. Reporting&#xa;   - Generate sales reports&#xa;   - View product performance&#xa;   - Export reports&#xa;&#xa;&#xa;8. Settings and Configuration&#xa;   - Manage user roles and permissions&#xa;   - Customize app settings&#xa;   - Update business information&#xa;&#xa;&#xa;9. Payment Processing&#xa;   - Select payment method&#xa;   - Process payment&#xa;   - Handle payment errors or declined transactions&#xa;&#xa;&#xa;10. Notifications and Alerts&#xa;    - View and manage notifications&#xa;    - Set up alerts for low inventory or sales targets" style="text;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="-603" y="190" width="380" height="890" as="geometry" />
+        <mxCell id="90HHAPKfToBtOzx2FQQZ-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="90HHAPKfToBtOzx2FQQZ-12" target="90HHAPKfToBtOzx2FQQZ-10">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1015" y="980" />
+              <mxPoint x="643" y="980" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="90HHAPKfToBtOzx2FQQZ-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="90HHAPKfToBtOzx2FQQZ-21" target="90HHAPKfToBtOzx2FQQZ-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="90HHAPKfToBtOzx2FQQZ-21" value="System displays invalid fields on form" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="800" y="597.5" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="90HHAPKfToBtOzx2FQQZ-22" value="User updates the necessary fields" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="1">
+          <mxGeometry x="940" y="600" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="90HHAPKfToBtOzx2FQQZ-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="90HHAPKfToBtOzx2FQQZ-22" target="02m3XyDNFQBm8fWto4tQ-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1015" y="560" />
+              <mxPoint x="683" y="560" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="90HHAPKfToBtOzx2FQQZ-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="90HHAPKfToBtOzx2FQQZ-26" target="90HHAPKfToBtOzx2FQQZ-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="90HHAPKfToBtOzx2FQQZ-26" value="User selects a product to manage its variants" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="65" y="1410" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="90HHAPKfToBtOzx2FQQZ-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="90HHAPKfToBtOzx2FQQZ-27" target="90HHAPKfToBtOzx2FQQZ-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="90HHAPKfToBtOzx2FQQZ-27" value="System displays the existing variants with an option to add or edit variants" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="260" y="1405" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="90HHAPKfToBtOzx2FQQZ-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="90HHAPKfToBtOzx2FQQZ-28" target="90HHAPKfToBtOzx2FQQZ-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="90HHAPKfToBtOzx2FQQZ-28" value="User updates the necessary fields" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="1">
+          <mxGeometry x="421.66999999999996" y="1407.5" width="158.33" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="90HHAPKfToBtOzx2FQQZ-29" value="User submits the changes" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="633" y="1405" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="90HHAPKfToBtOzx2FQQZ-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="90HHAPKfToBtOzx2FQQZ-30" target="90HHAPKfToBtOzx2FQQZ-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="90HHAPKfToBtOzx2FQQZ-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="90HHAPKfToBtOzx2FQQZ-30" target="90HHAPKfToBtOzx2FQQZ-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="90HHAPKfToBtOzx2FQQZ-30" value="System validates" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="770" y="1400" width="125" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="90HHAPKfToBtOzx2FQQZ-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="90HHAPKfToBtOzx2FQQZ-31" target="90HHAPKfToBtOzx2FQQZ-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="90HHAPKfToBtOzx2FQQZ-31" value="System displays invalid fields on form" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="960" y="1412.5" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="90HHAPKfToBtOzx2FQQZ-32" value="User updates the necessary fields" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="1">
+          <mxGeometry x="1130" y="1417.5" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="90HHAPKfToBtOzx2FQQZ-33" value="System saves the product and&lt;div&gt;confirms the action&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="782.5" y="1590" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="90HHAPKfToBtOzx2FQQZ-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="90HHAPKfToBtOzx2FQQZ-29" target="90HHAPKfToBtOzx2FQQZ-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="90HHAPKfToBtOzx2FQQZ-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="90HHAPKfToBtOzx2FQQZ-42" target="90HHAPKfToBtOzx2FQQZ-44" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="90HHAPKfToBtOzx2FQQZ-42" value="User selects a product&amp;nbsp;&lt;div&gt;to delete or archive from the products section&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="65" y="1764" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="90HHAPKfToBtOzx2FQQZ-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" source="90HHAPKfToBtOzx2FQQZ-44" target="90HHAPKfToBtOzx2FQQZ-50" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="439.87795000000006" y="1809" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="90HHAPKfToBtOzx2FQQZ-44" value="System prompts the user to confirm the action" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="260" y="1759" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="90HHAPKfToBtOzx2FQQZ-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" target="90HHAPKfToBtOzx2FQQZ-47" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="561.7920500000005" y="1809" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="90HHAPKfToBtOzx2FQQZ-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="90HHAPKfToBtOzx2FQQZ-50" target="90HHAPKfToBtOzx2FQQZ-57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="90HHAPKfToBtOzx2FQQZ-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="90HHAPKfToBtOzx2FQQZ-50" target="90HHAPKfToBtOzx2FQQZ-56">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="90HHAPKfToBtOzx2FQQZ-50" value="Delete or acrhive" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="467.5" y="1746.5" width="125" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="90HHAPKfToBtOzx2FQQZ-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" target="90HHAPKfToBtOzx2FQQZ-53" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1060" y="1816.5" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="90HHAPKfToBtOzx2FQQZ-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="90HHAPKfToBtOzx2FQQZ-56" target="90HHAPKfToBtOzx2FQQZ-60">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="90HHAPKfToBtOzx2FQQZ-56" value="System deletes the product" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="480" y="1910" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="90HHAPKfToBtOzx2FQQZ-62" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="90HHAPKfToBtOzx2FQQZ-57" target="90HHAPKfToBtOzx2FQQZ-60">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="90HHAPKfToBtOzx2FQQZ-57" value="System archive the product" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="693" y="1759" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="90HHAPKfToBtOzx2FQQZ-60" value="System confirms the product has been updated&lt;div&gt;or deleted&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="693" y="1970" width="100" height="100" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
@@ -354,13 +448,28 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="ad-hiYKI74t85FynTnoL" name="Page-5">
-    <mxGraphModel dx="1050" dy="522" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+  <diagram id="ad-hiYKI74t85FynTnoL" name="Inventory Management">
+    <mxGraphModel dx="2577" dy="870" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="U7Wai3kOTIbkrn5C5t9N-1" value="Start re" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="U7Wai3kOTIbkrn5C5t9N-1" value="User navigates to the inventory section from the dashboard" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="120" y="80" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="XduHA4tKhO0_VyA1QoJe-1" value="1. **View Inventory**&#xa;   - User navigates to the Inventory section from the dashboard.&#xa;   - System displays a list of all products with their current inventory levels.&#xa;&#xa;&#xa;2. **Update Inventory**&#xa;   - User selects a product to update inventory levels.&#xa;   - System displays the product details with an option to adjust the inventory.&#xa;   - User enters the new inventory quantity.&#xa;   - System updates the inventory level and confirms the change.&#xa;&#xa;&#xa;3. **Set Reorder Alerts**&#xa;   - User selects a product to set reorder alerts.&#xa;   - System displays options to configure the minimum inventory threshold.&#xa;   - User enters the threshold value.&#xa;   - System saves the alert setting and notifies the user when inventory falls below the threshold.&#xa;&#xa;&#xa;4. **Track Inventory History**&#xa;   - User selects a product to view its inventory history.&#xa;   - System displays a log of inventory changes over time, including dates, quantities, and reasons for adjustments.&#xa;&#xa;&#xa;5. **Receive Inventory**&#xa;   - User initiates the process to receive new stock.&#xa;   - System prompts the user to select the product and enter the quantity received.&#xa;   - User confirms the entry.&#xa;   - System updates the inventory levels and logs the transaction.&#xa;&#xa;&#xa;6. **Transfer Inventory**&#xa;   - User selects the option to transfer inventory between locations.&#xa;   - System prompts the user to select the source and destination locations, along with the product and quantity.&#xa;   - User confirms the transfer.&#xa;   - System updates inventory levels at both locations and logs the transfer." style="text;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-460" y="50" width="560" height="570" as="geometry" />
+        </mxCell>
+        <mxCell id="XduHA4tKhO0_VyA1QoJe-2" value="System displays a list of all products with their current inventory levels" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="1">
+          <mxGeometry x="270" y="60" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="XduHA4tKhO0_VyA1QoJe-3" value="User selects a product to update inventory" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="520" y="70" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="XduHA4tKhO0_VyA1QoJe-4" value="User enters new inventory quantity" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="1">
+          <mxGeometry x="677" y="75" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="XduHA4tKhO0_VyA1QoJe-5" value="System updates the new inventory level and confirms the change" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="890" y="70" width="100" height="100" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
