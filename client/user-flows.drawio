@@ -1,133 +1,136 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 AtContent/95.5.5391.49" version="24.7.7" pages="5">
   <diagram name="Auth" id="edf60f1a-56cd-e834-aa8a-f176f3a09ee4">
-    <mxGraphModel dx="2607" dy="1342" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
+    <mxGraphModel dx="3433" dy="1160" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="KLkaMGFnh6U5lrwXZxZ8-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="ATMucfQL7mX6FEVvn_mT-1" target="KLkaMGFnh6U5lrwXZxZ8-7">
+        <mxCell id="KLkaMGFnh6U5lrwXZxZ8-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="ATMucfQL7mX6FEVvn_mT-1" target="KLkaMGFnh6U5lrwXZxZ8-7" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ATMucfQL7mX6FEVvn_mT-1" value="Login flow" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;shadow=1;" vertex="1" parent="1">
+        <mxCell id="ATMucfQL7mX6FEVvn_mT-1" value="Login flow" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;shadow=1;" parent="1" vertex="1">
           <mxGeometry x="470" y="70" width="100" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="KLkaMGFnh6U5lrwXZxZ8-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="ATMucfQL7mX6FEVvn_mT-4" target="ATMucfQL7mX6FEVvn_mT-5">
+        <mxCell id="KLkaMGFnh6U5lrwXZxZ8-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="ATMucfQL7mX6FEVvn_mT-4" target="ATMucfQL7mX6FEVvn_mT-5" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ATMucfQL7mX6FEVvn_mT-4" value="User enters credentials" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=0;arcSize=12;size=0.23;labelBackgroundColor=none;shadow=1;" vertex="1" parent="1">
+        <mxCell id="ATMucfQL7mX6FEVvn_mT-4" value="User enters credentials" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=0;arcSize=12;size=0.23;labelBackgroundColor=none;shadow=1;" parent="1" vertex="1">
           <mxGeometry x="800" y="70" width="100" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="ATMucfQL7mX6FEVvn_mT-5" value="Validate&amp;nbsp;&lt;div&gt;Credentails&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;shadow=1;" vertex="1" parent="1">
+        <mxCell id="ATMucfQL7mX6FEVvn_mT-5" value="Validate&amp;nbsp;&lt;div&gt;Credentails&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;shadow=1;" parent="1" vertex="1">
           <mxGeometry x="940" y="50" width="100" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="ATMucfQL7mX6FEVvn_mT-8" value="Successful login" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;shadow=1;" vertex="1" parent="1">
+        <mxCell id="ATMucfQL7mX6FEVvn_mT-8" value="Successful login" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;shadow=1;" parent="1" vertex="1">
           <mxGeometry x="940" y="220" width="100" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="ATMucfQL7mX6FEVvn_mT-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;labelBackgroundColor=none;fontColor=default;shadow=1;" edge="1" parent="1" source="ATMucfQL7mX6FEVvn_mT-5" target="ATMucfQL7mX6FEVvn_mT-8">
+        <mxCell id="ATMucfQL7mX6FEVvn_mT-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;labelBackgroundColor=none;fontColor=default;shadow=1;" parent="1" source="ATMucfQL7mX6FEVvn_mT-5" target="ATMucfQL7mX6FEVvn_mT-8" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="KLkaMGFnh6U5lrwXZxZ8-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="ATMucfQL7mX6FEVvn_mT-14" target="KLkaMGFnh6U5lrwXZxZ8-15">
+        <mxCell id="KLkaMGFnh6U5lrwXZxZ8-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="ATMucfQL7mX6FEVvn_mT-14" target="KLkaMGFnh6U5lrwXZxZ8-15" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="620" y="410" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ATMucfQL7mX6FEVvn_mT-14" value="Logout flow" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;shadow=1;" vertex="1" parent="1">
+        <mxCell id="ATMucfQL7mX6FEVvn_mT-14" value="User selects the logout option" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;shadow=1;" parent="1" vertex="1">
           <mxGeometry x="470" y="370" width="100" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="ATMucfQL7mX6FEVvn_mT-16" value="User is logged out" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fillStyle=auto;shadow=1;" vertex="1" parent="1">
+        <mxCell id="ATMucfQL7mX6FEVvn_mT-16" value="User is logged out" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fillStyle=auto;shadow=1;" parent="1" vertex="1">
           <mxGeometry x="820" y="370" width="100" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="KLkaMGFnh6U5lrwXZxZ8-1" value="1. User Authentication&#xa;   - Sign up&#xa;   - Log in&#xa;   - Log out&#xa;   - Password reset&#xa;&#xa;&#xa;2. Dashboard Access&#xa;   - View dashboard&#xa;   - Navigate to different sections (e.g., Products, Sales, Reports)&#xa;&#xa;&#xa;3. Product Management&#xa;   - Add product&#xa;   - Edit product details&#xa;   - Manage product variants&#xa;   - Delete or archive product&#xa;&#xa;&#xa;4. Inventory Management&#xa;   - Track inventory levels&#xa;   - Update inventory&#xa;   - Set reorder alerts&#xa;&#xa;&#xa;5. Sales Management&#xa;   - Create a new sale&#xa;   - Add items to a sale&#xa;   - Apply discounts or offers&#xa;   - Complete sale transaction&#xa;   - Void or refund a sale&#xa;&#xa;&#xa;6. Customer Management&#xa;   - Add new customer&#xa;   - Edit customer details&#xa;   - View customer purchase history&#xa;&#xa;&#xa;7. Reporting&#xa;   - Generate sales reports&#xa;   - View product performance&#xa;   - Export reports&#xa;&#xa;&#xa;8. Settings and Configuration&#xa;   - Manage user roles and permissions&#xa;   - Customize app settings&#xa;   - Update business information&#xa;&#xa;&#xa;9. Payment Processing&#xa;   - Select payment method&#xa;   - Process payment&#xa;   - Handle payment errors or declined transactions&#xa;&#xa;&#xa;10. Notifications and Alerts&#xa;    - View and manage notifications&#xa;    - Set up alerts for low inventory or sales targets" style="text;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="10" y="10" width="380" height="890" as="geometry" />
+        <mxCell id="KLkaMGFnh6U5lrwXZxZ8-1" value="1. User Authentication&#xa;   - Sign up&#xa;   - Log in&#xa;   - Log out&#xa;   - Password reset&#xa;&#xa;&#xa;2. Dashboard Access&#xa;   - View dashboard&#xa;   - Navigate to different sections (e.g., Products, Sales, Reports)&#xa;&#xa;&#xa;3. Product Management&#xa;   - Add product&#xa;   - Edit product details&#xa;   - Manage product variants&#xa;   - Delete or archive product&#xa;&#xa;&#xa;4. Inventory Management&#xa;   - Track inventory levels&#xa;   - Update inventory&#xa;   - Set reorder alerts&#xa;&#xa;&#xa;5. Sales Management&#xa;   - Create a new sale&#xa;   - Add items to a sale&#xa;   - Apply discounts or offers&#xa;   - Complete sale transaction&#xa;   - Void or refund a sale&#xa;&#xa;&#xa;6. Customer Management&#xa;   - Add new customer&#xa;   - Edit customer details&#xa;   - View customer purchase history&#xa;&#xa;&#xa;7. Reporting&#xa;   - Generate sales reports&#xa;   - View product performance&#xa;   - Export reports&#xa;&#xa;&#xa;8. Settings and Configuration&#xa;   - Manage user roles and permissions&#xa;   - Customize app settings&#xa;   - Update business information&#xa;&#xa;&#xa;9. Payment Processing&#xa;   - Select payment method&#xa;   - Process payment&#xa;   - Handle payment errors or declined transactions&#xa;&#xa;&#xa;10. Notifications and Alerts&#xa;    - View and manage notifications&#xa;    - Set up alerts for low inventory or sales targets" style="text;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="-330" y="40" width="380" height="890" as="geometry" />
         </mxCell>
-        <mxCell id="KLkaMGFnh6U5lrwXZxZ8-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="KLkaMGFnh6U5lrwXZxZ8-2" target="KLkaMGFnh6U5lrwXZxZ8-17">
+        <mxCell id="KLkaMGFnh6U5lrwXZxZ8-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="KLkaMGFnh6U5lrwXZxZ8-2" target="KLkaMGFnh6U5lrwXZxZ8-17" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="KLkaMGFnh6U5lrwXZxZ8-2" value="Initiate password&lt;div&gt;reset process&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;shadow=1;" vertex="1" parent="1">
+        <mxCell id="KLkaMGFnh6U5lrwXZxZ8-2" value="Initiate password&lt;div&gt;reset process&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;shadow=1;" parent="1" vertex="1">
           <mxGeometry x="460" y="650" width="100" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="KLkaMGFnh6U5lrwXZxZ8-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="KLkaMGFnh6U5lrwXZxZ8-15" target="ATMucfQL7mX6FEVvn_mT-16">
+        <mxCell id="KLkaMGFnh6U5lrwXZxZ8-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="KLkaMGFnh6U5lrwXZxZ8-15" target="ATMucfQL7mX6FEVvn_mT-16" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="756" y="410" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="KLkaMGFnh6U5lrwXZxZ8-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="KLkaMGFnh6U5lrwXZxZ8-7" target="ATMucfQL7mX6FEVvn_mT-4">
+        <mxCell id="KLkaMGFnh6U5lrwXZxZ8-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="KLkaMGFnh6U5lrwXZxZ8-7" target="ATMucfQL7mX6FEVvn_mT-4" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="KLkaMGFnh6U5lrwXZxZ8-7" value="User navigates to login screen" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+        <mxCell id="KLkaMGFnh6U5lrwXZxZ8-7" value="User navigates to login screen" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
           <mxGeometry x="640" y="50" width="100" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="KLkaMGFnh6U5lrwXZxZ8-12" value="Display an error message and provide option to retry" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+        <mxCell id="KLkaMGFnh6U5lrwXZxZ8-12" value="Display an error message and provide option to retry" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
           <mxGeometry x="1100" y="40" width="100" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="KLkaMGFnh6U5lrwXZxZ8-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.018;entryY=0.592;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="ATMucfQL7mX6FEVvn_mT-5" target="KLkaMGFnh6U5lrwXZxZ8-12">
+        <mxCell id="KLkaMGFnh6U5lrwXZxZ8-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.018;entryY=0.592;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="ATMucfQL7mX6FEVvn_mT-5" target="KLkaMGFnh6U5lrwXZxZ8-12" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="KLkaMGFnh6U5lrwXZxZ8-15" value="User clicks on logout button" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+        <mxCell id="KLkaMGFnh6U5lrwXZxZ8-15" value="System invalidates the jwt-cookie" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
           <mxGeometry x="640" y="350" width="100" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="KLkaMGFnh6U5lrwXZxZ8-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="KLkaMGFnh6U5lrwXZxZ8-17" target="KLkaMGFnh6U5lrwXZxZ8-19">
+        <mxCell id="KLkaMGFnh6U5lrwXZxZ8-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="KLkaMGFnh6U5lrwXZxZ8-17" target="KLkaMGFnh6U5lrwXZxZ8-19" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="KLkaMGFnh6U5lrwXZxZ8-17" value="User enters email&lt;div&gt;and password&amp;nbsp;&lt;/div&gt;&lt;div&gt;on the password&lt;/div&gt;&lt;div&gt;reset page&lt;/div&gt;" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="1">
+        <mxCell id="KLkaMGFnh6U5lrwXZxZ8-17" value="User enters email&lt;div&gt;and password&amp;nbsp;&lt;/div&gt;&lt;div&gt;on the password&lt;/div&gt;&lt;div&gt;reset page&lt;/div&gt;" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" parent="1" vertex="1">
           <mxGeometry x="580" y="640" width="160" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="KLkaMGFnh6U5lrwXZxZ8-18" value="User checks email&lt;div&gt;&amp;nbsp;for the reset link&lt;/div&gt;" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="1">
+        <mxCell id="KLkaMGFnh6U5lrwXZxZ8-18" value="User checks email&lt;div&gt;&amp;nbsp;for the reset link&lt;/div&gt;" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" parent="1" vertex="1">
           <mxGeometry x="905" y="635" width="150" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="KLkaMGFnh6U5lrwXZxZ8-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="KLkaMGFnh6U5lrwXZxZ8-19" target="KLkaMGFnh6U5lrwXZxZ8-18">
+        <mxCell id="KLkaMGFnh6U5lrwXZxZ8-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="KLkaMGFnh6U5lrwXZxZ8-19" target="KLkaMGFnh6U5lrwXZxZ8-18" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="KLkaMGFnh6U5lrwXZxZ8-19" value="System sends a password reset link to the provided email address" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+        <mxCell id="KLkaMGFnh6U5lrwXZxZ8-19" value="System sends a password reset link to the provided email address" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
           <mxGeometry x="780" y="630" width="100" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="KLkaMGFnh6U5lrwXZxZ8-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="KLkaMGFnh6U5lrwXZxZ8-20" target="KLkaMGFnh6U5lrwXZxZ8-21">
+        <mxCell id="KLkaMGFnh6U5lrwXZxZ8-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="KLkaMGFnh6U5lrwXZxZ8-20" target="KLkaMGFnh6U5lrwXZxZ8-21" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="KLkaMGFnh6U5lrwXZxZ8-20" value="User clicks reset&lt;div&gt;link that takes&amp;nbsp;&lt;/div&gt;&lt;div&gt;them to the password reset page&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+        <mxCell id="KLkaMGFnh6U5lrwXZxZ8-20" value="User clicks reset&lt;div&gt;link that takes&amp;nbsp;&lt;/div&gt;&lt;div&gt;them to the password reset page&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
           <mxGeometry x="1090" y="620" width="100" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="KLkaMGFnh6U5lrwXZxZ8-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="KLkaMGFnh6U5lrwXZxZ8-21" target="KLkaMGFnh6U5lrwXZxZ8-22">
+        <mxCell id="KLkaMGFnh6U5lrwXZxZ8-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="KLkaMGFnh6U5lrwXZxZ8-21" target="KLkaMGFnh6U5lrwXZxZ8-22" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="KLkaMGFnh6U5lrwXZxZ8-21" value="User enters new password" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="1">
+        <mxCell id="KLkaMGFnh6U5lrwXZxZ8-21" value="User enters new password" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" parent="1" vertex="1">
           <mxGeometry x="1073.34" y="760" width="133.33" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="KLkaMGFnh6U5lrwXZxZ8-22" value="User submits&lt;div&gt;the password&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+        <mxCell id="KLkaMGFnh6U5lrwXZxZ8-22" value="User submits&lt;div&gt;the password&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
           <mxGeometry x="1080" y="880" width="100" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="KLkaMGFnh6U5lrwXZxZ8-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="KLkaMGFnh6U5lrwXZxZ8-23" target="KLkaMGFnh6U5lrwXZxZ8-25">
+        <mxCell id="KLkaMGFnh6U5lrwXZxZ8-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="KLkaMGFnh6U5lrwXZxZ8-23" target="KLkaMGFnh6U5lrwXZxZ8-25" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="KLkaMGFnh6U5lrwXZxZ8-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="KLkaMGFnh6U5lrwXZxZ8-23" target="KLkaMGFnh6U5lrwXZxZ8-24">
+        <mxCell id="KLkaMGFnh6U5lrwXZxZ8-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="KLkaMGFnh6U5lrwXZxZ8-23" target="KLkaMGFnh6U5lrwXZxZ8-24" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="KLkaMGFnh6U5lrwXZxZ8-23" value="Validate request" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+        <mxCell id="KLkaMGFnh6U5lrwXZxZ8-23" value="Validate request" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" parent="1" vertex="1">
           <mxGeometry x="1080" y="1000" width="100" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="KLkaMGFnh6U5lrwXZxZ8-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="KLkaMGFnh6U5lrwXZxZ8-24" target="KLkaMGFnh6U5lrwXZxZ8-21">
+        <mxCell id="KLkaMGFnh6U5lrwXZxZ8-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="KLkaMGFnh6U5lrwXZxZ8-24" target="KLkaMGFnh6U5lrwXZxZ8-21" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="1290" y="800" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="KLkaMGFnh6U5lrwXZxZ8-24" value="Display an error&lt;div&gt;message in&amp;nbsp;&lt;/div&gt;&lt;div&gt;the form&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+        <mxCell id="KLkaMGFnh6U5lrwXZxZ8-24" value="Display an error&lt;div&gt;message in&amp;nbsp;&lt;/div&gt;&lt;div&gt;the form&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
           <mxGeometry x="1240" y="1000" width="100" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="KLkaMGFnh6U5lrwXZxZ8-25" value="Update password on system and&amp;nbsp;&lt;div&gt;send success&lt;/div&gt;&lt;div&gt;message&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+        <mxCell id="KLkaMGFnh6U5lrwXZxZ8-25" value="Update password on system and&amp;nbsp;&lt;div&gt;send success&lt;/div&gt;&lt;div&gt;message&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
           <mxGeometry x="1080" y="1140" width="100" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="KLkaMGFnh6U5lrwXZxZ8-26" value="Password reset&lt;div&gt;successful&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="1">
+        <mxCell id="KLkaMGFnh6U5lrwXZxZ8-26" value="Password reset&lt;div&gt;successful&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" parent="1" vertex="1">
           <mxGeometry x="1073.34" y="1270" width="100" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="KLkaMGFnh6U5lrwXZxZ8-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.006;entryY=0.598;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="KLkaMGFnh6U5lrwXZxZ8-18" target="KLkaMGFnh6U5lrwXZxZ8-20">
+        <mxCell id="KLkaMGFnh6U5lrwXZxZ8-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.006;entryY=0.598;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="KLkaMGFnh6U5lrwXZxZ8-18" target="KLkaMGFnh6U5lrwXZxZ8-20" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="KLkaMGFnh6U5lrwXZxZ8-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="KLkaMGFnh6U5lrwXZxZ8-22" target="KLkaMGFnh6U5lrwXZxZ8-23">
+        <mxCell id="KLkaMGFnh6U5lrwXZxZ8-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="KLkaMGFnh6U5lrwXZxZ8-22" target="KLkaMGFnh6U5lrwXZxZ8-23" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="KLkaMGFnh6U5lrwXZxZ8-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="KLkaMGFnh6U5lrwXZxZ8-25" target="KLkaMGFnh6U5lrwXZxZ8-26">
+        <mxCell id="KLkaMGFnh6U5lrwXZxZ8-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="KLkaMGFnh6U5lrwXZxZ8-25" target="KLkaMGFnh6U5lrwXZxZ8-26" edge="1">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3nHdeg5CLA1Ou0qOZPsk-1" value="1. **Sign Up**&#xa;   - User navigates to the sign-up page.&#xa;   - User enters required information (e.g., email, password).&#xa;   - User submits the form.&#xa;   - System creates a new account and sends a confirmation email.&#xa;   - User confirms the email address (if required).&#xa;   - System redirects the user to the login page or dashboard.&#xa;&#xa;&#xa;2. **Log In**&#xa;   - User navigates to the login page.&#xa;   - User enters email and password.&#xa;   - User submits the login form.&#xa;   - System verifies credentials and generates a JWT cookie.&#xa;   - System redirects the user to the dashboard or previous page.&#xa;&#xa;&#xa;3. **Log Out**&#xa;   - User selects the log out option.&#xa;   - System invalidates the JWT cookie.&#xa;   - System redirects the user to the login page.&#xa;&#xa;&#xa;4. **Password Reset**&#xa;   - User navigates to the password reset page.&#xa;   - User enters their email address.&#xa;   - System sends a password reset link to the user&#39;s email.&#xa;   - User follows the link to a reset password page.&#xa;   - User enters and confirms a new password.&#xa;   - System updates the password and redirects the user to the login page." style="text;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry y="350" width="430" height="460" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
@@ -140,44 +143,44 @@
         <mxCell id="ET9BGdN6wAJWBJ6dI6yu-1" value="1. User Authentication&#xa;   - Sign up&#xa;   - Log in&#xa;   - Log out&#xa;   - Password reset&#xa;&#xa;&#xa;2. Dashboard Access&#xa;   - View dashboard&#xa;   - Navigate to different sections (e.g., Products, Sales, Reports)&#xa;&#xa;&#xa;3. Product Management&#xa;   - Add product&#xa;   - Edit product details&#xa;   - Manage product variants&#xa;   - Delete or archive product&#xa;&#xa;&#xa;4. Inventory Management&#xa;   - Track inventory levels&#xa;   - Update inventory&#xa;   - Set reorder alerts&#xa;&#xa;&#xa;5. Sales Management&#xa;   - Create a new sale&#xa;   - Add items to a sale&#xa;   - Apply discounts or offers&#xa;   - Complete sale transaction&#xa;   - Void or refund a sale&#xa;&#xa;&#xa;6. Customer Management&#xa;   - Add new customer&#xa;   - Edit customer details&#xa;   - View customer purchase history&#xa;&#xa;&#xa;7. Reporting&#xa;   - Generate sales reports&#xa;   - View product performance&#xa;   - Export reports&#xa;&#xa;&#xa;8. Settings and Configuration&#xa;   - Manage user roles and permissions&#xa;   - Customize app settings&#xa;   - Update business information&#xa;&#xa;&#xa;9. Payment Processing&#xa;   - Select payment method&#xa;   - Process payment&#xa;   - Handle payment errors or declined transactions&#xa;&#xa;&#xa;10. Notifications and Alerts&#xa;    - View and manage notifications&#xa;    - Set up alerts for low inventory or sales targets" style="text;whiteSpace=wrap;" parent="1" vertex="1">
           <mxGeometry x="10" y="10" width="380" height="890" as="geometry" />
         </mxCell>
-        <mxCell id="68NjNx0a_AqUf3TJoTM--1" value="1. **View Dashboard**&#xa;   - User logs in and is redirected to the dashboard.&#xa;   - System displays an overview of key metrics (e.g., sales, inventory, notifications).&#xa;   - User reviews the information presented on the dashboard.&#xa;&#xa;&#xa;2. **Navigate to Different Sections**&#xa;   - From the dashboard, the user selects a section (e.g., Products, Sales, Reports).&#xa;   - System redirects the user to the selected section, displaying the relevant content.&#xa;   - User interacts with the selected section as needed." style="text;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="440" y="130" width="480" height="170" as="geometry" />
-        </mxCell>
         <mxCell id="68NjNx0a_AqUf3TJoTM--5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="68NjNx0a_AqUf3TJoTM--2" target="68NjNx0a_AqUf3TJoTM--3">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="68NjNx0a_AqUf3TJoTM--2" value="User logs in and is redirected to the dashboard" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="560" y="390" width="133.33" height="80" as="geometry" />
+          <mxGeometry x="480" y="595" width="133.33" height="80" as="geometry" />
         </mxCell>
         <mxCell id="68NjNx0a_AqUf3TJoTM--6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="68NjNx0a_AqUf3TJoTM--3" target="68NjNx0a_AqUf3TJoTM--4">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="68NjNx0a_AqUf3TJoTM--3" value="System displays an overview of key metrics (e.g. sales, inventory, etc)" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="760" y="380" width="100" height="100" as="geometry" />
+          <mxGeometry x="680" y="585" width="100" height="100" as="geometry" />
         </mxCell>
         <mxCell id="68NjNx0a_AqUf3TJoTM--4" value="User reviews information presented on the dashboard" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="940" y="380" width="100" height="100" as="geometry" />
+          <mxGeometry x="860" y="585" width="100" height="100" as="geometry" />
         </mxCell>
         <mxCell id="68NjNx0a_AqUf3TJoTM--10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="68NjNx0a_AqUf3TJoTM--7" target="68NjNx0a_AqUf3TJoTM--8">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="68NjNx0a_AqUf3TJoTM--7" value="From the dashboard, the user selects a section" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="530" y="535" width="166.67" height="100" as="geometry" />
+          <mxGeometry x="450" y="740" width="166.67" height="100" as="geometry" />
         </mxCell>
         <mxCell id="68NjNx0a_AqUf3TJoTM--11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="68NjNx0a_AqUf3TJoTM--8" target="68NjNx0a_AqUf3TJoTM--9">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="68NjNx0a_AqUf3TJoTM--8" value="System redirects user to the selected section" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="760" y="535" width="100" height="100" as="geometry" />
+          <mxGeometry x="680" y="740" width="100" height="100" as="geometry" />
         </mxCell>
         <mxCell id="68NjNx0a_AqUf3TJoTM--9" value="User interacts with the selected section as needed" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="910" y="527" width="115" height="115" as="geometry" />
+          <mxGeometry x="830" y="732" width="115" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="Pe-H3QMwWFV3X3XAD8rP-1" value="1. **Sign Up**&#xa;   - User navigates to the sign-up page.&#xa;   - User enters required information (e.g., email, password).&#xa;   - User submits the form.&#xa;   - System creates a new account and sends a confirmation email.&#xa;   - User confirms the email address (if required).&#xa;   - System redirects the user to the login page or dashboard.&#xa;&#xa;&#xa;2. **Log In**&#xa;   - User navigates to the login page.&#xa;   - User enters email and password.&#xa;   - User submits the login form.&#xa;   - System verifies credentials and generates a JWT cookie.&#xa;   - System redirects the user to the dashboard or previous page.&#xa;&#xa;&#xa;3. **Log Out**&#xa;   - User selects the log out option.&#xa;   - System invalidates the JWT cookie.&#xa;   - System redirects the user to the login page.&#xa;&#xa;&#xa;4. **Password Reset**&#xa;   - User navigates to the password reset page.&#xa;   - User enters their email address.&#xa;   - System sends a password reset link to the user&#39;s email.&#xa;   - User follows the link to a reset password page.&#xa;   - User enters and confirms a new password.&#xa;   - System updates the password and redirects the user to the login page." style="text;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="440" width="430" height="460" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
   <diagram id="oy20ObqP9nqBbCuuLZpR" name="Product Management">
-    <mxGraphModel dx="2577" dy="870" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2927" dy="1044" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -449,7 +452,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="ad-hiYKI74t85FynTnoL" name="Inventory Management">
-    <mxGraphModel dx="2577" dy="870" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2327" dy="746" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
