@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 AtContent/95.5.5391.49" version="24.7.6" pages="4">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 AtContent/95.5.5391.49" version="24.7.7" pages="5">
   <diagram name="Auth" id="edf60f1a-56cd-e834-aa8a-f176f3a09ee4">
     <mxGraphModel dx="2607" dy="1342" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
       <root>
@@ -287,10 +287,81 @@
     </mxGraphModel>
   </diagram>
   <diagram id="fErVwJJDAx_JUwvB0Bmo" name="Sales Management">
-    <mxGraphModel dx="1434" dy="738" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2327" dy="746" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="veGnckZtErtQ1iC1VaG7-1" value="1. User Authentication&#xa;   - Sign up&#xa;   - Log in&#xa;   - Log out&#xa;   - Password reset&#xa;&#xa;&#xa;2. Dashboard Access&#xa;   - View dashboard&#xa;   - Navigate to different sections (e.g., Products, Sales, Reports)&#xa;&#xa;&#xa;3. Product Management&#xa;   - Add product&#xa;   - Edit product details&#xa;   - Manage product variants&#xa;   - Delete or archive product&#xa;&#xa;&#xa;4. Inventory Management&#xa;   - Track inventory levels&#xa;   - Update inventory&#xa;   - Set reorder alerts&#xa;&#xa;&#xa;5. Sales Management&#xa;   - Create a new sale&#xa;   - Add items to a sale&#xa;   - Apply discounts or offers&#xa;   - Complete sale transaction&#xa;   - Void or refund a sale&#xa;&#xa;&#xa;6. Customer Management&#xa;   - Add new customer&#xa;   - Edit customer details&#xa;   - View customer purchase history&#xa;&#xa;&#xa;7. Reporting&#xa;   - Generate sales reports&#xa;   - View product performance&#xa;   - Export reports&#xa;&#xa;&#xa;8. Settings and Configuration&#xa;   - Manage user roles and permissions&#xa;   - Customize app settings&#xa;   - Update business information&#xa;&#xa;&#xa;9. Payment Processing&#xa;   - Select payment method&#xa;   - Process payment&#xa;   - Handle payment errors or declined transactions&#xa;&#xa;&#xa;10. Notifications and Alerts&#xa;    - View and manage notifications&#xa;    - Set up alerts for low inventory or sales targets" style="text;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-603" y="190" width="380" height="890" as="geometry" />
+        </mxCell>
+        <mxCell id="9vT2X-pDmY957znZ57l0-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="9vT2X-pDmY957znZ57l0-1" target="9vT2X-pDmY957znZ57l0-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9vT2X-pDmY957znZ57l0-1" value="User accesses the sales management&amp;nbsp;&lt;div&gt;section&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-40" y="260" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="9vT2X-pDmY957znZ57l0-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="9vT2X-pDmY957znZ57l0-2" target="9vT2X-pDmY957znZ57l0-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9vT2X-pDmY957znZ57l0-2" value="User selects a product category" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="150" y="250" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="9vT2X-pDmY957znZ57l0-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="9vT2X-pDmY957znZ57l0-3" target="9vT2X-pDmY957znZ57l0-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9vT2X-pDmY957znZ57l0-3" value="User selects a product from that category" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="300" y="250" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="9vT2X-pDmY957znZ57l0-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="9vT2X-pDmY957znZ57l0-4" target="9vT2X-pDmY957znZ57l0-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9vT2X-pDmY957znZ57l0-4" value="User selects a product variant" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="440" y="250" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="9vT2X-pDmY957znZ57l0-5" value="User enters the amount of items of the variant" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="1">
+          <mxGeometry x="440" y="380" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9vT2X-pDmY957znZ57l0-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="9vT2X-pDmY957znZ57l0-6" target="9vT2X-pDmY957znZ57l0-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9vT2X-pDmY957znZ57l0-6" value="Add another product to the sale?" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="440" y="470" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="9vT2X-pDmY957znZ57l0-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="9vT2X-pDmY957znZ57l0-7" target="9vT2X-pDmY957znZ57l0-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9vT2X-pDmY957znZ57l0-7" value="User chooses payment method" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="440" y="600" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="9vT2X-pDmY957znZ57l0-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="9vT2X-pDmY957znZ57l0-9" target="9vT2X-pDmY957znZ57l0-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9vT2X-pDmY957znZ57l0-9" value="User completes the sale" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="440" y="730" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="9vT2X-pDmY957znZ57l0-10" value="System provides sale details" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="1">
+          <mxGeometry x="415" y="870" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="9vT2X-pDmY957znZ57l0-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="9vT2X-pDmY957znZ57l0-5" target="9vT2X-pDmY957znZ57l0-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9vT2X-pDmY957znZ57l0-19" value="User completes&lt;div&gt;sales task&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="440" y="1000" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yW1qPdrsY9zgSs1vMqbq-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="9vT2X-pDmY957znZ57l0-10" target="9vT2X-pDmY957znZ57l0-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="ad-hiYKI74t85FynTnoL" name="Page-5">
+    <mxGraphModel dx="1050" dy="522" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="U7Wai3kOTIbkrn5C5t9N-1" value="Start re" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="80" width="120" height="80" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
